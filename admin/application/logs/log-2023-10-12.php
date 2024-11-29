@@ -1,0 +1,17 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2023-10-12 14:41:55 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= ''
+WHERE `id` = '327'' at line 1 - Invalid query: UPDATE `user_package_features` SET  = ''
+WHERE `id` = '327'
+ERROR - 2023-10-12 15:02:39 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= ''
+WHERE `id` = '327'' at line 1 - Invalid query: UPDATE `user_package_features` SET  = ''
+WHERE `id` = '327'
+ERROR - 2023-10-12 15:04:29 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= ''
+WHERE `id` = '327'' at line 1 - Invalid query: UPDATE `user_package_features` SET  = ''
+WHERE `id` = '327'
+ERROR - 2023-10-12 15:07:38 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= ''
+WHERE `id` = '328'' at line 1 - Invalid query: UPDATE `user_package_features` SET  = ''
+WHERE `id` = '328'
+ERROR - 2023-10-12 15:07:58 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= ''
+WHERE `id` = '328'' at line 1 - Invalid query: UPDATE `user_package_features` SET  = ''
+WHERE `id` = '328'

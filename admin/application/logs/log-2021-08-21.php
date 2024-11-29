@@ -1,0 +1,58 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2021-08-21 05:05:15 --> Severity: Warning --> is_uploaded_file() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/system/libraries/Upload.php 412
+ERROR - 2021-08-21 05:24:27 --> Severity: Warning --> is_uploaded_file() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/system/libraries/Upload.php 412
+ERROR - 2021-08-21 05:26:09 --> Severity: Warning --> is_uploaded_file() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/system/libraries/Upload.php 412
+ERROR - 2021-08-21 05:28:04 --> Severity: Warning --> is_uploaded_file() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/system/libraries/Upload.php 412
+ERROR - 2021-08-21 05:47:26 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 5345
+ERROR - 2021-08-21 05:51:16 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 5345
+ERROR - 2021-08-21 05:59:07 --> Query error: Column 'event_gallery_eventid' cannot be null - Invalid query: INSERT INTO `event_gallery` (`event_gallery_eventid`, `event_gallery_userid`, `event_gallery_image`) VALUES (NULL, '98', '62ab79b3b44bc394602e5ad4a619facf.png')
+ERROR - 2021-08-21 05:59:07 --> Query error: Column 'event_gallery_eventid' cannot be null - Invalid query: INSERT INTO `event_gallery` (`event_gallery_eventid`, `event_gallery_userid`, `event_gallery_image`) VALUES (NULL, '98', 'a278df0aebfc9ff448ed5cf546e96c26.png')
+ERROR - 2021-08-21 05:59:07 --> Query error: Column 'event_gallery_eventid' cannot be null - Invalid query: INSERT INTO `event_gallery` (`event_gallery_eventid`, `event_gallery_userid`, `event_gallery_image`) VALUES (NULL, '98', '5bc1401f838a00fb76f834baf02bd679.png')
+ERROR - 2021-08-21 05:59:54 --> Query error: Column 'event_gallery_eventid' cannot be null - Invalid query: INSERT INTO `event_gallery` (`event_gallery_eventid`, `event_gallery_userid`, `event_gallery_image`) VALUES (NULL, '98', '59f1c5fa64c68824fa1f519782a444c8.png')
+ERROR - 2021-08-21 05:59:54 --> Query error: Column 'event_gallery_eventid' cannot be null - Invalid query: INSERT INTO `event_gallery` (`event_gallery_eventid`, `event_gallery_userid`, `event_gallery_image`) VALUES (NULL, '98', 'f2bd4efba7c5f8cc331d827be6f20bcd.png')
+ERROR - 2021-08-21 05:59:54 --> Query error: Column 'event_gallery_eventid' cannot be null - Invalid query: INSERT INTO `event_gallery` (`event_gallery_eventid`, `event_gallery_userid`, `event_gallery_image`) VALUES (NULL, '98', 'd93bcd6dfe65e4973eb6e8ec8cba91e6.png')
+ERROR - 2021-08-21 06:00:38 --> Query error: Column 'event_gallery_eventid' cannot be null - Invalid query: INSERT INTO `event_gallery` (`event_gallery_eventid`, `event_gallery_userid`, `event_gallery_image`) VALUES (NULL, '98', '79000a054ae1835fecbe48a3477f83ca.png')
+ERROR - 2021-08-21 06:00:38 --> Query error: Column 'event_gallery_eventid' cannot be null - Invalid query: INSERT INTO `event_gallery` (`event_gallery_eventid`, `event_gallery_userid`, `event_gallery_image`) VALUES (NULL, '98', '1be18fa870153dbcc295596afe30053d.png')
+ERROR - 2021-08-21 06:00:38 --> Query error: Column 'event_gallery_eventid' cannot be null - Invalid query: INSERT INTO `event_gallery` (`event_gallery_eventid`, `event_gallery_userid`, `event_gallery_image`) VALUES (NULL, '98', '61305662cc345084428c9c7c3b2aedfe.png')
+ERROR - 2021-08-21 06:01:38 --> Query error: Column 'event_gallery_eventid' cannot be null - Invalid query: INSERT INTO `event_gallery` (`event_gallery_eventid`, `event_gallery_userid`, `event_gallery_image`) VALUES (NULL, '98', '6a5e3a7e3bc104838a54622ff9f6942a.png')
+ERROR - 2021-08-21 06:01:38 --> Query error: Column 'event_gallery_eventid' cannot be null - Invalid query: INSERT INTO `event_gallery` (`event_gallery_eventid`, `event_gallery_userid`, `event_gallery_image`) VALUES (NULL, '98', '1437119907b4f409a63fed61eca879bf.png')
+ERROR - 2021-08-21 06:01:38 --> Query error: Column 'event_gallery_eventid' cannot be null - Invalid query: INSERT INTO `event_gallery` (`event_gallery_eventid`, `event_gallery_userid`, `event_gallery_image`) VALUES (NULL, '98', '08a26f0eb8ce84b31f16a245e60e1e5f.png')
+ERROR - 2021-08-21 06:10:44 --> Severity: Warning --> array_filter() expects parameter 1 to be array, string given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 5343
+ERROR - 2021-08-21 06:10:44 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 5343
+ERROR - 2021-08-21 06:12:50 --> Severity: Warning --> array_filter() expects parameter 1 to be array, string given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 5343
+ERROR - 2021-08-21 06:12:50 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 5343
+ERROR - 2021-08-21 06:16:40 --> Severity: Warning --> array_filter() expects parameter 1 to be array, string given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 5343
+ERROR - 2021-08-21 06:16:40 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 5343
+ERROR - 2021-08-21 08:23:39 --> Severity: Warning --> array_filter() expects parameter 1 to be array, string given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 3619
+ERROR - 2021-08-21 08:23:39 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 3619
+ERROR - 2021-08-21 08:26:19 --> Severity: Warning --> array_filter() expects parameter 1 to be array, string given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 3619
+ERROR - 2021-08-21 08:26:19 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 3619
+ERROR - 2021-08-21 08:29:49 --> Severity: Warning --> array_filter() expects parameter 1 to be array, string given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 3618
+ERROR - 2021-08-21 08:29:49 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 3618
+ERROR - 2021-08-21 08:29:49 --> Severity: Warning --> array_filter() expects parameter 1 to be array, string given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 3619
+ERROR - 2021-08-21 08:29:49 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 3619
+ERROR - 2021-08-21 08:39:18 --> Severity: Compile Error --> Cannot redeclare Api_v1::user_gallery_delete_post() /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 3807
+ERROR - 2021-08-21 08:39:38 --> Severity: Compile Error --> Cannot redeclare Api_v1::user_gallery_delete_post() /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 3807
+ERROR - 2021-08-21 08:42:18 --> Severity: Compile Error --> Cannot redeclare Api_v1::user_gallery_delete_post() /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 3807
+ERROR - 2021-08-21 08:42:41 --> Severity: Compile Error --> Cannot redeclare Api_v1::user_gallery_delete_post() /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 3807
+ERROR - 2021-08-21 09:31:07 --> Severity: error --> Exception: Call to undefined method User_model::app_get_my_report_card() /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 6800
+ERROR - 2021-08-21 09:48:40 --> Severity: error --> Exception: syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' /home/view360/public_html/j4edemo/application/models/User_model.php 6327
+ERROR - 2021-08-21 11:52:40 --> Query error: Unknown column 'packages' in 'where clause' - Invalid query: SELECT `pack_name`
+FROM `packages`
+WHERE `packages` = '1'
+ERROR - 2021-08-21 11:52:40 --> Severity: error --> Exception: Call to a member function row() on boolean /home/view360/public_html/j4edemo/application/models/User_model.php 2701
+ERROR - 2021-08-21 11:53:09 --> Query error: Unknown column 'packages' in 'where clause' - Invalid query: SELECT `pack_name`
+FROM `packages`
+WHERE `packages` = '1'
+ERROR - 2021-08-21 11:53:33 --> Severity: Notice --> Undefined index: result /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 121
+ERROR - 2021-08-21 11:53:34 --> Severity: Notice --> Undefined index: result /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 121
+ERROR - 2021-08-21 11:53:36 --> Severity: Notice --> Undefined index: result /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 121
+ERROR - 2021-08-21 11:53:43 --> Severity: Notice --> Undefined index: result /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 121
+ERROR - 2021-08-21 11:53:53 --> Severity: Notice --> Undefined index: result /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 121
+ERROR - 2021-08-21 11:54:07 --> Severity: Notice --> Undefined index: result /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 121
+ERROR - 2021-08-21 12:32:58 --> Query error: Column 'user_ids' cannot be null - Invalid query: INSERT INTO `activity` (`user_ids`, `level`, `event`, `detail`, `debug_detail`, `created_time`) VALUES (NULL, 'Information', 'signin-success', '{\"ip\":\"103.53.63.215\",\"is_mobile\":false,\"is_browser\":false,\"browser_name\":\"\",\"browser_version\":\"\",\"platform\":\"Unknown Platform\"}', '', '2021-08-21 12:32:58')
+ERROR - 2021-08-21 12:35:44 --> Query error: Column 'user_ids' cannot be null - Invalid query: INSERT INTO `activity` (`user_ids`, `level`, `event`, `detail`, `debug_detail`, `created_time`) VALUES (NULL, 'Information', 'signin-success', '{\"ip\":\"103.53.63.215\",\"is_mobile\":false,\"is_browser\":false,\"browser_name\":\"\",\"browser_version\":\"\",\"platform\":\"Unknown Platform\"}', '', '2021-08-21 12:35:44')
+ERROR - 2021-08-21 12:54:17 --> Query error: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'view360_j4edemo.recomendation.id'; this is incompatible with sql_mode=only_full_group_by - Invalid query: select recomendation.id as recom_id,COUNT(recomendation.id) as visits from `recomendation` INNER JOIN user ON user.id = recomendation.recomend_by  where recomendation.userid='74'
+ERROR - 2021-08-21 12:54:17 --> Severity: error --> Exception: Call to a member function result() on boolean /home/view360/public_html/j4edemo/application/models/User_model.php 5932
+ERROR - 2021-08-21 12:55:43 --> Query error: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'view360_j4edemo.recomendation.id'; this is incompatible with sql_mode=only_full_group_by - Invalid query: select recomendation.id as recom_id,COUNT(recomendation.id) as visits from `recomendation` INNER JOIN user ON user.id = recomendation.recomend_by  where recomendation.userid='74'

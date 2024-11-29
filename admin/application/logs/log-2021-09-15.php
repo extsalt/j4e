@@ -1,0 +1,36 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2021-09-15 09:04:50 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''='2' AND event_invite_touserid='74'' at line 1 - Invalid query: select * from event_invite where event_invite_type'='2' AND event_invite_touserid='74'
+ERROR - 2021-09-15 09:04:50 --> Severity: error --> Exception: Call to a member function num_rows() on boolean /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 7341
+ERROR - 2021-09-15 14:26:31 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 7345
+ERROR - 2021-09-15 14:26:31 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 7345
+ERROR - 2021-09-15 14:29:51 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 7345
+ERROR - 2021-09-15 14:29:51 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 7345
+ERROR - 2021-09-15 14:30:02 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 7345
+ERROR - 2021-09-15 14:30:02 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 7345
+ERROR - 2021-09-15 14:31:08 --> Query error: Unknown column 'requirements_status' in 'where clause' - Invalid query: select * from requirements_user_status where req_user_status_userid ='72' AND requirements_status='1' AND req_user_status_reqid ='27'
+ERROR - 2021-09-15 14:31:08 --> Severity: error --> Exception: Call to a member function result() on boolean /home/view360/public_html/j4edemo/application/models/User_model.php 4868
+ERROR - 2021-09-15 14:31:17 --> Query error: Unknown column 'requirements_status' in 'where clause' - Invalid query: select * from requirements_user_status where req_user_status_userid ='72' AND requirements_status='1' AND req_user_status_reqid ='27'
+ERROR - 2021-09-15 14:31:17 --> Severity: error --> Exception: Call to a member function result() on boolean /home/view360/public_html/j4edemo/application/models/User_model.php 4868
+ERROR - 2021-09-15 14:31:21 --> Query error: Unknown column 'requirements_status' in 'where clause' - Invalid query: select * from requirements_user_status where req_user_status_userid ='72' AND requirements_status='1' AND req_user_status_reqid ='27'
+ERROR - 2021-09-15 14:31:21 --> Severity: error --> Exception: Call to a member function result() on boolean /home/view360/public_html/j4edemo/application/models/User_model.php 4868
+ERROR - 2021-09-15 14:31:37 --> Query error: Unknown column 'requirements_status' in 'where clause' - Invalid query: select * from requirements_user_status where req_user_status_userid ='72' AND requirements_status='1' AND req_user_status_reqid ='27'
+ERROR - 2021-09-15 14:31:37 --> Severity: error --> Exception: Call to a member function result() on boolean /home/view360/public_html/j4edemo/application/models/User_model.php 4868
+ERROR - 2021-09-15 14:31:44 --> Query error: Unknown column 'requirements_status' in 'where clause' - Invalid query: select * from requirements_user_status where req_user_status_userid ='72' AND requirements_status='1' AND req_user_status_reqid ='8'
+ERROR - 2021-09-15 14:31:44 --> Severity: error --> Exception: Call to a member function result() on boolean /home/view360/public_html/j4edemo/application/models/User_model.php 4868
+ERROR - 2021-09-15 14:31:57 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 7345
+ERROR - 2021-09-15 14:31:57 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 7345
+ERROR - 2021-09-15 14:32:09 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 7345
+ERROR - 2021-09-15 14:32:09 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 7345
+ERROR - 2021-09-15 14:32:17 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 7345
+ERROR - 2021-09-15 14:32:17 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 7345
+ERROR - 2021-09-15 14:32:31 --> Query error: Unknown column 'requirements_status' in 'where clause' - Invalid query: select * from requirements_user_status where req_user_status_userid ='72' AND requirements_status='1' AND req_user_status_reqid ='27'
+ERROR - 2021-09-15 14:32:31 --> Severity: error --> Exception: Call to a member function result() on boolean /home/view360/public_html/j4edemo/application/models/User_model.php 4868
+ERROR - 2021-09-15 14:33:36 --> Query error: Unknown column 'requirements_status' in 'where clause' - Invalid query: select * from requirements_user_status where req_user_status_userid ='72' AND requirements_status='1' AND req_user_status_reqid ='27'
+ERROR - 2021-09-15 14:33:36 --> Severity: error --> Exception: Call to a member function result() on boolean /home/view360/public_html/j4edemo/application/models/User_model.php 4868
+ERROR - 2021-09-15 14:34:03 --> Query error: Unknown column 'requirements_status' in 'where clause' - Invalid query: select * from requirements_user_status where req_user_status_userid ='72' AND requirements_status='1' AND req_user_status_reqid ='27'
+ERROR - 2021-09-15 14:34:03 --> Severity: error --> Exception: Call to a member function result() on boolean /home/view360/public_html/j4edemo/application/models/User_model.php 4868
+ERROR - 2021-09-15 14:34:17 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 7345
+ERROR - 2021-09-15 14:34:17 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 7345
+ERROR - 2021-09-15 14:38:07 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 7345
+ERROR - 2021-09-15 14:38:07 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 7345

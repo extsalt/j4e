@@ -1,0 +1,9 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2022-07-22 14:13:09 --> Severity: Warning --> Use of undefined constant base_url - assumed 'base_url' (this will throw an Error in a future version of PHP) /var/www/html/admin/application/views/themes/default/Generic/dashboard_admin.php 52
+ERROR - 2022-07-22 14:13:09 --> Severity: Warning --> Use of undefined constant base_url - assumed 'base_url' (this will throw an Error in a future version of PHP) /var/www/html/admin/application/views/themes/default/Generic/dashboard_admin.php 68
+ERROR - 2022-07-22 14:13:09 --> Severity: Warning --> Use of undefined constant base_url - assumed 'base_url' (this will throw an Error in a future version of PHP) /var/www/html/admin/application/views/themes/default/Generic/dashboard_admin.php 85
+ERROR - 2022-07-22 14:13:09 --> Severity: Warning --> Use of undefined constant base_url - assumed 'base_url' (this will throw an Error in a future version of PHP) /var/www/html/admin/application/views/themes/default/Generic/dashboard_admin.php 101
+ERROR - 2022-07-22 14:13:09 --> Severity: Warning --> Use of undefined constant base_url - assumed 'base_url' (this will throw an Error in a future version of PHP) /var/www/html/admin/application/views/themes/default/Generic/dashboard_admin.php 119
+ERROR - 2022-07-22 14:13:09 --> Severity: Warning --> Use of undefined constant base_url - assumed 'base_url' (this will throw an Error in a future version of PHP) /var/www/html/admin/application/views/themes/default/Generic/dashboard_admin.php 136
+ERROR - 2022-07-22 14:13:09 --> Severity: Warning --> Use of undefined constant base_url - assumed 'base_url' (this will throw an Error in a future version of PHP) /var/www/html/admin/application/views/themes/default/Generic/dashboard_admin.php 152

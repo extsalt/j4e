@@ -1,0 +1,137 @@
+[09-Apr-2021 11:51:38 UTC] PHP Fatal error:  Cannot use [] for reading in /home/applexindia/public_html/cms/application/views/themes/default/Backend/permission/permission_manages_data.php on line 81
+[12-Jun-2021 06:25:39 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_user_login_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 241
+[13-Jun-2021 18:16:09 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 65
+[13-Jun-2021 18:22:51 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 65
+[13-Jun-2021 18:23:22 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 65
+[13-Jun-2021 18:41:42 UTC] PHP Fatal error:  Cannot use [] for reading in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 190
+[14-Jun-2021 03:30:22 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 65
+[23-Jun-2021 15:43:06 UTC] PHP Fatal error:  Cannot redeclare User_model::get_app_user_view_profile_fileds_builder() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 1520
+[23-Jun-2021 15:43:25 UTC] PHP Fatal error:  Cannot redeclare User_model::get_app_user_view_profile_fileds_builder() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 1520
+[23-Jun-2021 15:43:33 UTC] PHP Fatal error:  Cannot redeclare User_model::get_app_user_view_profile_fileds_builder() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 1520
+[23-Jun-2021 15:43:55 UTC] PHP Fatal error:  Cannot redeclare User_model::get_app_user_view_profile_fileds_builder() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 1520
+[23-Jun-2021 15:44:25 UTC] PHP Fatal error:  Cannot redeclare User_model::get_app_user_view_profile_fileds_builder() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 1520
+[23-Jun-2021 15:44:31 UTC] PHP Fatal error:  Cannot redeclare User_model::get_app_user_view_profile_fileds_builder() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 1520
+[23-Jun-2021 15:44:39 UTC] PHP Fatal error:  Cannot redeclare User_model::get_app_user_view_profile_fileds_builder() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 1520
+[23-Jun-2021 15:44:45 UTC] PHP Fatal error:  Cannot redeclare User_model::get_app_user_view_profile_fileds_builder() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 1520
+[23-Jun-2021 15:44:48 UTC] PHP Fatal error:  Cannot redeclare User_model::get_app_user_view_profile_fileds_builder() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 1520
+[23-Jun-2021 15:45:37 UTC] PHP Fatal error:  Cannot redeclare User_model::get_app_user_view_profile_fileds_builder() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 1520
+[23-Jun-2021 15:46:37 UTC] PHP Fatal error:  Cannot redeclare User_model::get_app_user_view_profile_fileds_builder() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 1520
+[23-Jun-2021 15:50:15 UTC] PHP Fatal error:  Cannot redeclare User_model::get_app_user_view_profile_fileds_builder() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 1520
+[23-Jun-2021 15:50:30 UTC] PHP Fatal error:  Cannot redeclare User_model::get_app_user_view_profile_fileds_builder() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 1520
+[23-Jun-2021 15:51:30 UTC] PHP Fatal error:  Cannot redeclare User_model::get_app_user_view_profile_fileds_builder() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 1520
+[23-Jun-2021 15:52:33 UTC] PHP Fatal error:  Cannot redeclare User_model::get_app_user_view_profile_fileds_builder() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 1520
+[23-Jun-2021 15:53:15 UTC] PHP Fatal error:  Cannot redeclare User_model::get_app_user_view_profile_fileds_builder() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 1520
+[12-Jul-2021 19:49:47 UTC] PHP Fatal error:  Cannot redeclare User_model::check_connection_sent_or_not() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 1908
+[04-Aug-2021 09:23:24 UTC] PHP Fatal error:  Cannot redeclare User_model::check_user_exist_or_not() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 3387
+[05-Aug-2021 08:11:31 UTC] PHP Fatal error:  Cannot use empty array elements in arrays in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 3019
+[07-Aug-2021 12:20:16 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:20:20 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:20:20 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:20:22 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:20:24 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:20:24 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:20:26 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:20:27 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:20:27 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:20:29 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:20:30 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:20:32 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:20:34 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:20:34 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:20:36 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:20:37 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:20:48 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:20:58 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:20:58 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:21:00 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:21:01 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:21:01 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:21:02 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:21:03 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:21:04 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:21:06 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:22:57 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:22:58 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:22:58 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:23:00 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:23:01 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:23:01 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:23:03 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:23:06 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:23:09 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:23:12 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:23:12 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:23:14 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:23:14 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:28:06 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:28:08 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:28:08 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:28:10 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:33:13 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:34:00 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:34:02 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:34:02 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:40:28 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:40:29 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[07-Aug-2021 12:40:29 UTC] PHP Fatal error:  Cannot redeclare Api_v1::app_get_offline_business_transaction_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 4448
+[17-Aug-2021 11:11:49 UTC] PHP Fatal error:  Cannot redeclare User_model::get_transaction_details_by_given_fileds_builder() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 4853
+[17-Aug-2021 11:11:54 UTC] PHP Fatal error:  Cannot redeclare User_model::get_transaction_details_by_given_fileds_builder() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 4853
+[17-Aug-2021 11:11:54 UTC] PHP Fatal error:  Cannot redeclare User_model::get_transaction_details_by_given_fileds_builder() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 4853
+[17-Aug-2021 11:11:57 UTC] PHP Fatal error:  Cannot redeclare User_model::get_transaction_details_by_given_fileds_builder() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 4853
+[17-Aug-2021 11:12:02 UTC] PHP Fatal error:  Cannot redeclare User_model::get_transaction_details_by_given_fileds_builder() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 4853
+[17-Aug-2021 11:12:02 UTC] PHP Fatal error:  Cannot redeclare User_model::get_transaction_details_by_given_fileds_builder() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 4853
+[17-Aug-2021 11:13:24 UTC] PHP Fatal error:  Cannot redeclare User_model::get_transaction_details_by_given_fileds_builder() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 4853
+[17-Aug-2021 11:13:25 UTC] PHP Fatal error:  Cannot redeclare User_model::get_transaction_details_by_given_fileds_builder() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 4853
+[17-Aug-2021 11:13:25 UTC] PHP Fatal error:  Cannot redeclare User_model::get_transaction_details_by_given_fileds_builder() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 4853
+[17-Aug-2021 11:14:36 UTC] PHP Fatal error:  Cannot redeclare User_model::get_transaction_details_by_given_fileds_builder() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 4853
+[19-Aug-2021 06:54:35 UTC] PHP Fatal error:  Cannot redeclare User_model::get_list_recommendations_to() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 5856
+[19-Aug-2021 06:54:39 UTC] PHP Fatal error:  Cannot redeclare User_model::get_list_recommendations_to() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 5856
+[19-Aug-2021 06:54:39 UTC] PHP Fatal error:  Cannot redeclare User_model::get_list_recommendations_to() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 5856
+[19-Aug-2021 06:54:42 UTC] PHP Fatal error:  Cannot redeclare User_model::get_list_recommendations_to() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 5856
+[19-Aug-2021 06:54:46 UTC] PHP Fatal error:  Cannot redeclare User_model::get_list_recommendations_to() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 5856
+[19-Aug-2021 06:54:46 UTC] PHP Fatal error:  Cannot redeclare User_model::get_list_recommendations_to() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 5856
+[19-Aug-2021 06:54:59 UTC] PHP Fatal error:  Cannot redeclare User_model::get_list_recommendations_to() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 5856
+[19-Aug-2021 06:56:49 UTC] PHP Fatal error:  Cannot redeclare User_model::get_list_recommendations_to() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 5856
+[19-Aug-2021 06:56:56 UTC] PHP Fatal error:  Cannot redeclare User_model::get_list_recommendations_to() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 5856
+[19-Aug-2021 06:56:57 UTC] PHP Fatal error:  Cannot redeclare User_model::get_list_recommendations_to() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 5856
+[19-Aug-2021 06:57:01 UTC] PHP Fatal error:  Cannot redeclare User_model::get_list_recommendations_to() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 5856
+[19-Aug-2021 06:57:01 UTC] PHP Fatal error:  Cannot redeclare User_model::get_list_recommendations_to() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 5856
+[21-Aug-2021 08:39:18 UTC] PHP Fatal error:  Cannot redeclare Api_v1::user_gallery_delete_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 3807
+[21-Aug-2021 08:39:38 UTC] PHP Fatal error:  Cannot redeclare Api_v1::user_gallery_delete_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 3807
+[21-Aug-2021 08:42:18 UTC] PHP Fatal error:  Cannot redeclare Api_v1::user_gallery_delete_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 3807
+[21-Aug-2021 08:42:41 UTC] PHP Fatal error:  Cannot redeclare Api_v1::user_gallery_delete_post() in /home/view360/public_html/j4edemo/application/controllers/Api_v1.php on line 3807
+[04-Sep-2021 10:41:39 UTC] PHP Fatal error:  Cannot redeclare User_model::insert_event_ratings_review() in /home/view360/public_html/j4edemo/application/models/User_model.php on line 7146
+[07-Sep-2021 06:11:29 UTC] PHP Fatal error:  Cannot redeclare Events::managesdetail() in /home/view360/public_html/j4edemo/application/controllers/Events.php on line 50
+[07-Sep-2021 06:12:51 UTC] PHP Fatal error:  Cannot redeclare Events::managesdetail() in /home/view360/public_html/j4edemo/application/controllers/Events.php on line 50
+[07-Sep-2021 08:56:12 UTC] PHP Fatal error:  Cannot redeclare Events::managesbooking() in /home/view360/public_html/j4edemo/application/controllers/Events.php on line 50
+[07-Sep-2021 08:56:39 UTC] PHP Fatal error:  Cannot redeclare Events::managesbooking() in /home/view360/public_html/j4edemo/application/controllers/Events.php on line 50
+[08-Sep-2021 11:39:48 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/view360/public_html/j4edemo/application/views/themes/default/Backend/event/event_manages.php on line 121
+[08-Sep-2021 11:39:57 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/view360/public_html/j4edemo/application/views/themes/default/Backend/event/event_manages.php on line 121
+[08-Sep-2021 11:40:17 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/view360/public_html/j4edemo/application/views/themes/default/Backend/event/event_manages.php on line 121
+[14-Oct-2021 11:48:04 UTC] PHP Fatal error:  Cannot use temporary expression in write context in /home/view360/public_html/j4e_new/application/config/rest.php on line 244
+[14-Oct-2021 11:49:46 UTC] PHP Fatal error:  Cannot use temporary expression in write context in /home/view360/public_html/j4e_new/application/config/rest.php on line 244
+[14-Oct-2021 11:49:46 UTC] PHP Fatal error:  Cannot use temporary expression in write context in /home/view360/public_html/j4e_new/application/config/rest.php on line 244
+[14-Oct-2021 11:49:49 UTC] PHP Fatal error:  Cannot use temporary expression in write context in /home/view360/public_html/j4e_new/application/config/rest.php on line 244
+[14-Oct-2021 11:49:49 UTC] PHP Fatal error:  Cannot use temporary expression in write context in /home/view360/public_html/j4e_new/application/config/rest.php on line 244
+[14-Oct-2021 11:49:52 UTC] PHP Fatal error:  Cannot use temporary expression in write context in /home/view360/public_html/j4e_new/application/config/rest.php on line 244
+[14-Oct-2021 11:49:53 UTC] PHP Fatal error:  Cannot use temporary expression in write context in /home/view360/public_html/j4e_new/application/config/rest.php on line 244
+[14-Oct-2021 11:49:56 UTC] PHP Fatal error:  Cannot use temporary expression in write context in /home/view360/public_html/j4e_new/application/config/rest.php on line 244
+[14-Oct-2021 11:49:56 UTC] PHP Fatal error:  Cannot use temporary expression in write context in /home/view360/public_html/j4e_new/application/config/rest.php on line 244
+[14-Oct-2021 11:50:04 UTC] PHP Fatal error:  Cannot use temporary expression in write context in /home/view360/public_html/j4e_new/application/config/rest.php on line 244
+[14-Oct-2021 11:50:04 UTC] PHP Fatal error:  Cannot use temporary expression in write context in /home/view360/public_html/j4e_new/application/config/rest.php on line 244
+[14-Oct-2021 11:50:05 UTC] PHP Fatal error:  Cannot use temporary expression in write context in /home/view360/public_html/j4e_new/application/config/rest.php on line 244
+[14-Oct-2021 11:50:10 UTC] PHP Fatal error:  Cannot use temporary expression in write context in /home/view360/public_html/j4e_new/application/config/rest.php on line 244
+[14-Oct-2021 11:50:12 UTC] PHP Fatal error:  Cannot use temporary expression in write context in /home/view360/public_html/j4e_new/application/config/rest.php on line 244
+[14-Oct-2021 11:50:14 UTC] PHP Fatal error:  Cannot use temporary expression in write context in /home/view360/public_html/j4e_new/application/config/rest.php on line 244
+[14-Oct-2021 11:50:16 UTC] PHP Fatal error:  Cannot use temporary expression in write context in /home/view360/public_html/j4e_new/application/config/rest.php on line 244
+[14-Oct-2021 11:50:17 UTC] PHP Fatal error:  Cannot use temporary expression in write context in /home/view360/public_html/j4e_new/application/config/rest.php on line 244
+[14-Oct-2021 11:50:17 UTC] PHP Fatal error:  Cannot use temporary expression in write context in /home/view360/public_html/j4e_new/application/config/rest.php on line 244
+[14-Oct-2021 11:50:20 UTC] PHP Fatal error:  Cannot use temporary expression in write context in /home/view360/public_html/j4e_new/application/config/rest.php on line 244
+[14-Oct-2021 11:50:20 UTC] PHP Fatal error:  Cannot use temporary expression in write context in /home/view360/public_html/j4e_new/application/config/rest.php on line 244
+[14-Oct-2021 11:50:56 UTC] PHP Fatal error:  Cannot use temporary expression in write context in /home/view360/public_html/j4e_new/application/config/rest.php on line 244
+[14-Oct-2021 11:51:54 UTC] PHP Fatal error:  Cannot use temporary expression in write context in /home/view360/public_html/j4e_new/application/config/rest.php on line 244
+[14-Oct-2021 11:52:11 UTC] PHP Fatal error:  Cannot use temporary expression in write context in /home/view360/public_html/j4e_new/application/config/rest.php on line 244
+[14-Oct-2021 11:52:42 UTC] PHP Fatal error:  Cannot use temporary expression in write context in /home/view360/public_html/j4e_new/application/config/rest.php on line 244
+[28-Oct-2021 10:40:26 UTC] PHP Fatal error:  Cannot redeclare Infopages::managesprivacypolicy() in /home/view360/public_html/j4e_new/application/controllers/Infopages.php on line 52
+[28-Oct-2021 10:41:31 UTC] PHP Fatal error:  Cannot redeclare Infopages::managesprivacypolicy() in /home/view360/public_html/j4e_new/application/controllers/Infopages.php on line 52
+[28-Oct-2021 10:42:20 UTC] PHP Fatal error:  Cannot redeclare Infopages::managesprivacypolicy() in /home/view360/public_html/j4e_new/application/controllers/Infopages.php on line 52

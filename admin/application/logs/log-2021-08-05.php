@@ -1,0 +1,9 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2021-08-05 04:55:00 --> Query error: Column 'user_ids' cannot be null - Invalid query: INSERT INTO `activity` (`user_ids`, `level`, `event`, `detail`, `debug_detail`, `created_time`) VALUES (NULL, 'Information', 'signin-success', '{\"ip\":\"103.53.63.215\",\"is_mobile\":false,\"is_browser\":false,\"browser_name\":\"\",\"browser_version\":\"\",\"platform\":\"Unknown Platform\"}', '', '2021-08-05 04:55:00')
+ERROR - 2021-08-05 04:55:39 --> Query error: Column 'user_ids' cannot be null - Invalid query: INSERT INTO `activity` (`user_ids`, `level`, `event`, `detail`, `debug_detail`, `created_time`) VALUES (NULL, 'Information', 'signin-success', '{\"ip\":\"103.53.63.215\",\"is_mobile\":false,\"is_browser\":false,\"browser_name\":\"\",\"browser_version\":\"\",\"platform\":\"Unknown Platform\"}', '', '2021-08-05 04:55:39')
+ERROR - 2021-08-05 05:59:37 --> Severity: Warning --> Illegal string offset 'userid' /home/view360/public_html/j4edemo/application/models/User_model.php 3521
+ERROR - 2021-08-05 06:00:36 --> Severity: Warning --> Illegal string offset 'userid' /home/view360/public_html/j4edemo/application/models/User_model.php 3521
+ERROR - 2021-08-05 06:00:41 --> Severity: Warning --> Illegal string offset 'userid' /home/view360/public_html/j4edemo/application/models/User_model.php 3521
+ERROR - 2021-08-05 07:06:30 --> Query error: Column 'user_ids' cannot be null - Invalid query: INSERT INTO `activity` (`user_ids`, `level`, `event`, `detail`, `debug_detail`, `created_time`) VALUES (NULL, 'Information', 'signin-success', '{\"ip\":\"103.53.63.215\",\"is_mobile\":false,\"is_browser\":false,\"browser_name\":\"\",\"browser_version\":\"\",\"platform\":\"Unknown Platform\"}', '', '2021-08-05 07:06:30')
+ERROR - 2021-08-05 08:11:31 --> Severity: Compile Error --> Cannot use empty array elements in arrays /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 3019

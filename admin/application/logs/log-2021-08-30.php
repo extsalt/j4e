@@ -1,0 +1,57 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2021-08-30 04:44:08 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 04:44:18 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 05:20:46 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 05:32:19 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 05:35:30 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 05:35:47 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 05:37:37 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 05:40:25 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 05:46:45 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 05:53:07 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 05:56:24 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND membership_type !='0'' at line 1 - Invalid query: select id,CONCAT_WS(' ',first_name,middle_name,last_name) as full_name,avatar from user where `id`= AND membership_type !='0'
+ERROR - 2021-08-30 05:56:24 --> Severity: error --> Exception: Call to a member function row() on boolean /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 3494
+ERROR - 2021-08-30 05:56:26 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 06:08:17 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 06:09:58 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 06:13:39 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 06:15:34 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 06:18:21 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 06:19:14 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 06:19:24 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 06:43:08 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 06:49:00 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 07:01:21 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 07:01:33 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 07:03:55 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 07:45:22 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 07:46:24 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 07:46:29 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 08:05:31 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 08:11:50 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 08:11:54 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 08:12:02 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 08:12:11 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 08:13:10 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 08:23:39 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 09:18:55 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 09:20:17 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 09:24:45 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 09:29:20 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 09:32:17 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 10:24:26 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 10:24:55 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 10:25:20 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 10:26:50 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 10:47:41 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 10:53:03 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 11:10:11 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 11:43:06 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 12:00:57 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 12:11:57 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 12:26:49 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 12:34:22 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366
+ERROR - 2021-08-30 13:25:33 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND membership_type !='0'' at line 1 - Invalid query: select id,CONCAT_WS(' ',first_name,middle_name,last_name) as full_name,avatar from user where `id`= AND membership_type !='0'
+ERROR - 2021-08-30 13:25:33 --> Severity: error --> Exception: Call to a member function row() on boolean /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 3494
+ERROR - 2021-08-30 13:41:58 --> Severity: Warning --> json_decode() expects parameter 1 to be string, array given /home/view360/public_html/j4edemo/application/controllers/Api_v1.php 2366

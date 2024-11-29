@@ -1,0 +1,311 @@
+/*!
+ * Font Awesome Icon Picker
+ * https://farbelous.github.io/fontawesome-iconpicker/
+ *
+ * @author Javi Aguilar, itsjavi.com
+ * @license MIT License
+ * @see https://github.com/farbelous/fontawesome-iconpicker/blob/master/LICENSE
+ */
+.iconpicker-popsover.popsover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  max-width: none;
+  padding: 1px;
+  text-align: left;
+  width: 234px;
+  background: #f7f7f7;
+  z-index: 9;
+}
+.iconpicker-popsover.popsover.top,
+.iconpicker-popsover.popsover.topLeftCorner,
+.iconpicker-popsover.popsover.topLeft,
+.iconpicker-popsover.popsover.topRight,
+.iconpicker-popsover.popsover.topRightCorner {
+  margin-top: -10px;
+}
+.iconpicker-popsover.popsover.right,
+.iconpicker-popsover.popsover.rightTop,
+.iconpicker-popsover.popsover.rightBottom {
+  margin-left: 10px;
+}
+.iconpicker-popsover.popsover.bottom,
+.iconpicker-popsover.popsover.bottomRightCorner,
+.iconpicker-popsover.popsover.bottomRight,
+.iconpicker-popsover.popsover.bottomLeft,
+.iconpicker-popsover.popsover.bottomLeftCorner {
+  margin-top: 10px;
+}
+.iconpicker-popsover.popsover.left,
+.iconpicker-popsover.popsover.leftBottom,
+.iconpicker-popsover.popsover.leftTop {
+  margin-left: -10px;
+}
+.iconpicker-popsover.popsover.inline {
+  margin: 0 0 12px 0;
+  position: relative;
+  display: inline-block;
+  opacity: 1;
+  top: auto;
+  left: auto;
+  bottom: auto;
+  right: auto;
+  max-width: 100%;
+  box-shadow: none;
+  z-index: auto;
+  vertical-align: top;
+}
+.iconpicker-popsover.popsover.inline > .forarwicon {
+  display: none;
+}
+.dropdown-menu-icons .iconpicker-popsover.inline {
+  margin: 0;
+  border: none;
+}
+.dropdown-menu-icons.iconpicker-container {
+  padding: 0;
+}
+.iconpicker-popsover.popsover .popsover-title {
+  padding: 12px;
+  font-size: 13px;
+  line-height: 15px;
+  border-bottom: 1px solid #ebebeb;
+  background-color: #f7f7f7;
+}
+.iconpicker-popsover.popsover .popsover-title input[type=search].iconpicker-search {
+  margin: 0 0 2px 0;
+}
+.iconpicker-popsover.popsover .popsover-title-text ~ input[type=search].iconpicker-search {
+  margin-top: 12px;
+}
+.iconpicker-popsover.popsover .popsover-content {
+  padding: 0px;
+  text-align: center;
+}
+.iconpicker-popsover .popsover-footer {
+  float: none;
+  clear: both;
+  padding: 12px;
+  text-align: right;
+  margin: 0;
+  border-top: 1px solid #ebebeb;
+  background-color: #f7f7f7;
+}
+.iconpicker-popsover .popsover-footer:before,
+.iconpicker-popsover .popsover-footer:after {
+  content: " ";
+  display: table;
+}
+.iconpicker-popsover .popsover-footer:after {
+  clear: both;
+}
+.iconpicker-popsover .popsover-footer .iconpicker-btn {
+  margin-left: 10px;
+}
+.iconpicker-popsover .popsover-footer input[type=search].iconpicker-search {
+  /*width:auto;
+    float:left;*/
+  margin-bottom: 12px;
+}
+.iconpicker-popsover.popsover > .forarwicon,
+.iconpicker-popsover.popsover > .forarwicon:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.iconpicker-popsover.popsover > .forarwicon {
+  border-width: 11px;
+}
+.iconpicker-popsover.popsover > .forarwicon:after {
+  border-width: 10px;
+  content: "";
+}
+.iconpicker-popsover.popsover.top > .forarwicon,
+.iconpicker-popsover.popsover.topLeft > .forarwicon,
+.iconpicker-popsover.popsover.topRight > .forarwicon {
+  left: 50%;
+  margin-left: -11px;
+  border-bottom-width: 0;
+  border-top-color: #999999;
+  border-top-color: rgba(0, 0, 0, 0.25);
+  bottom: -11px;
+}
+.iconpicker-popsover.popsover.top > .forarwicon:after,
+.iconpicker-popsover.popsover.topLeft > .forarwicon:after,
+.iconpicker-popsover.popsover.topRight > .forarwicon:after {
+  content: " ";
+  bottom: 1px;
+  margin-left: -10px;
+  border-bottom-width: 0;
+  border-top-color: #fff;
+}
+.iconpicker-popsover.popsover.topLeft > .forarwicon {
+  left: 8px;
+  margin-left: 0;
+}
+.iconpicker-popsover.popsover.topRight > .forarwicon {
+  left: auto;
+  right: 8px;
+  margin-left: 0;
+}
+.iconpicker-popsover.popsover.right > .forarwicon,
+.iconpicker-popsover.popsover.rightTop > .forarwicon,
+.iconpicker-popsover.popsover.rightBottom > .forarwicon {
+  top: 50%;
+  left: -11px;
+  margin-top: -11px;
+  border-left-width: 0;
+  border-right-color: #999999;
+  border-right-color: rgba(0, 0, 0, 0.25);
+}
+.iconpicker-popsover.popsover.right > .forarwicon:after,
+.iconpicker-popsover.popsover.rightTop > .forarwicon:after,
+.iconpicker-popsover.popsover.rightBottom > .forarwicon:after {
+  content: " ";
+  left: 1px;
+  bottom: -10px;
+  border-left-width: 0;
+  border-right-color: #fff;
+}
+.iconpicker-popsover.popsover.rightTop > .forarwicon {
+  top: auto;
+  bottom: 8px;
+  margin-top: 0;
+}
+.iconpicker-popsover.popsover.rightBottom > .forarwicon {
+  top: 8px;
+  margin-top: 0;
+}
+.iconpicker-popsover.popsover.bottom > .forarwicon,
+.iconpicker-popsover.popsover.bottomRight > .forarwicon,
+.iconpicker-popsover.popsover.bottomLeft > .forarwicon {
+  left: 50%;
+  margin-left: -11px;
+  border-top-width: 0;
+  border-bottom-color: #999999;
+  border-bottom-color: rgba(0, 0, 0, 0.25);
+  top: -11px;
+}
+.iconpicker-popsover.popsover.bottom > .forarwicon:after,
+.iconpicker-popsover.popsover.bottomRight > .forarwicon:after,
+.iconpicker-popsover.popsover.bottomLeft > .forarwicon:after {
+  content: " ";
+  top: 1px;
+  margin-left: -10px;
+  border-top-width: 0;
+  border-bottom-color: #fff;
+}
+.iconpicker-popsover.popsover.bottomLeft > .forarwicon {
+  left: 8px;
+  margin-left: 0;
+}
+.iconpicker-popsover.popsover.bottomRight > .forarwicon {
+  left: auto;
+  right: 8px;
+  margin-left: 0;
+}
+.iconpicker-popsover.popsover.left > .forarwicon,
+.iconpicker-popsover.popsover.leftBottom > .forarwicon,
+.iconpicker-popsover.popsover.leftTop > .forarwicon {
+  top: 50%;
+  right: -11px;
+  margin-top: -11px;
+  border-right-width: 0;
+  border-left-color: #999999;
+  border-left-color: rgba(0, 0, 0, 0.25);
+}
+.iconpicker-popsover.popsover.left > .forarwicon:after,
+.iconpicker-popsover.popsover.leftBottom > .forarwicon:after,
+.iconpicker-popsover.popsover.leftTop > .forarwicon:after {
+  content: " ";
+  right: 1px;
+  border-right-width: 0;
+  border-left-color: #fff;
+  bottom: -10px;
+}
+.iconpicker-popsover.popsover.leftBottom > .forarwicon {
+  top: 8px;
+  margin-top: 0;
+}
+.iconpicker-popsover.popsover.leftTop > .forarwicon {
+  top: auto;
+  bottom: 8px;
+  margin-top: 0;
+}
+.iconpicker {
+  position: relative;
+  text-align: left;
+  text-shadow: none;
+  line-height: 0;
+  display: block;
+  margin: 0;
+  overflow: hidden;
+}
+.iconpicker * {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  position: relative;
+}
+.iconpicker:before,
+.iconpicker:after {
+  content: " ";
+  display: table;
+}
+.iconpicker:after {
+  clear: both;
+}
+.iconpicker .iconpicker-items {
+  position: relative;
+  clear: both;
+  float: none;
+  padding: 12px 0 0 12px;
+  background: #fff;
+  margin: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  min-height: 49px;
+  max-height: 246px;
+}
+.iconpicker .iconpicker-items:before,
+.iconpicker .iconpicker-items:after {
+  content: " ";
+  display: table;
+}
+.iconpicker .iconpicker-items:after {
+  clear: both;
+}
+.iconpicker .iconpicker-item {
+  float: left;
+  width: 14px;
+  height: 14px;
+  padding: 12px;
+  margin: 0 12px 12px 0;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 14px;
+  box-shadow: 0 0 0 1px #ddd;
+  color: inherit;
+  /*&:nth-child(4n+4) {
+        margin-right: 0;
+    }
+    &:nth-last-child(-n+4) {
+        margin-bottom: 0;
+    }*/
+}
+.iconpicker .iconpicker-item:hover:not(.iconpicker-selected) {
+  background-color: #eee;
+}
+.iconpicker .iconpicker-item.iconpicker-selected {
+  box-shadow: none;
+  color: #fff;
+  background: #000;
+}
+.iconpicker-component {
+  cursor: pointer;
+}

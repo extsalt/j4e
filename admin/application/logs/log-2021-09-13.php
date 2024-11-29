@@ -1,0 +1,30 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2021-09-13 04:03:42 --> Severity: error --> Exception: syntax error, unexpected ';', expecting ')' /home/view360/public_html/j4edemo/application/models/User_model.php 7081
+ERROR - 2021-09-13 07:23:45 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '2021 AND ( buddy_meet_touserid = 74 OR buddy_meet_withuserid =74) ORDER BY buddy' at line 1 - Invalid query: select * from buddy_meet where 'buddy_meet_monthyear'=Aug 2021 AND ( buddy_meet_touserid = 74 OR buddy_meet_withuserid =74) ORDER BY buddy_meet_id DESC 
+ERROR - 2021-09-13 07:23:45 --> Severity: error --> Exception: Call to a member function result() on boolean /home/view360/public_html/j4edemo/application/models/User_model.php 7060
+ERROR - 2021-09-13 07:24:13 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '2021 AND ( buddy_meet_touserid = 74 OR buddy_meet_withuserid =74) ORDER BY buddy' at line 1 - Invalid query: select * from buddy_meet where 'buddy_meet_monthyear'=Aug 2021 AND ( buddy_meet_touserid = 74 OR buddy_meet_withuserid =74) ORDER BY buddy_meet_id DESC 
+ERROR - 2021-09-13 07:24:38 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '2021 AND ( buddy_meet_touserid = 74 OR buddy_meet_withuserid =74) ORDER BY buddy' at line 1 - Invalid query: select * from buddy_meet where buddy_meet_monthyear=Aug 2021 AND ( buddy_meet_touserid = 74 OR buddy_meet_withuserid =74) ORDER BY buddy_meet_id DESC 
+ERROR - 2021-09-13 07:25:32 --> Severity: Notice --> Undefined variable: sql /home/view360/public_html/j4edemo/application/models/User_model.php 7079
+ERROR - 2021-09-13 07:25:32 --> Severity: Notice --> Undefined variable: sql /home/view360/public_html/j4edemo/application/models/User_model.php 7079
+ERROR - 2021-09-13 07:25:32 --> Severity: Notice --> Undefined variable: sql /home/view360/public_html/j4edemo/application/models/User_model.php 7079
+ERROR - 2021-09-13 07:25:32 --> Severity: Notice --> Undefined variable: sql /home/view360/public_html/j4edemo/application/models/User_model.php 7079
+ERROR - 2021-09-13 07:25:32 --> Severity: Notice --> Undefined variable: sql /home/view360/public_html/j4edemo/application/models/User_model.php 7079
+ERROR - 2021-09-13 07:25:32 --> Severity: Notice --> Undefined variable: sql /home/view360/public_html/j4edemo/application/models/User_model.php 7079
+ERROR - 2021-09-13 08:07:15 --> Severity: Warning --> usort() expects parameter 2 to be a valid callback, no array or string given /home/view360/public_html/j4edemo/application/models/User_model.php 7071
+ERROR - 2021-09-13 08:07:23 --> Severity: Warning --> usort() expects parameter 2 to be a valid callback, no array or string given /home/view360/public_html/j4edemo/application/models/User_model.php 7071
+ERROR - 2021-09-13 08:20:58 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'followup where followup_monthyear='Sep 2021' AND (followup_byuserid=74 or follow' at line 1 - Invalid query: select * followup where followup_monthyear='Sep 2021' AND (followup_byuserid=74 or followup_touserid=74
+ERROR - 2021-09-13 08:20:58 --> Severity: error --> Exception: Call to a member function result() on boolean /home/view360/public_html/j4edemo/application/models/User_model.php 7392
+ERROR - 2021-09-13 08:21:19 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'followup where followup_monthyear='Sep 2021' AND (followup_byuserid=74 or follow' at line 1 - Invalid query: select * followup where followup_monthyear='Sep 2021' AND (followup_byuserid=74 or followup_touserid=74
+ERROR - 2021-09-13 08:21:52 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 - Invalid query: select * FROM followup where followup_monthyear='Sep 2021' AND (followup_byuserid=74 or followup_touserid=74
+ERROR - 2021-09-13 08:22:15 --> Severity: Notice --> Undefined variable: sql /home/view360/public_html/j4edemo/application/models/User_model.php 7411
+ERROR - 2021-09-13 08:22:15 --> Severity: Notice --> Undefined variable: sql /home/view360/public_html/j4edemo/application/models/User_model.php 7411
+ERROR - 2021-09-13 08:22:15 --> Severity: Notice --> Undefined variable: sql /home/view360/public_html/j4edemo/application/models/User_model.php 7411
+ERROR - 2021-09-13 08:22:15 --> Severity: Notice --> Undefined variable: sql /home/view360/public_html/j4edemo/application/models/User_model.php 7411
+ERROR - 2021-09-13 08:22:15 --> Severity: Notice --> Undefined variable: sql /home/view360/public_html/j4edemo/application/models/User_model.php 7411
+ERROR - 2021-09-13 08:22:15 --> Severity: Notice --> Undefined variable: sql /home/view360/public_html/j4edemo/application/models/User_model.php 7411
+ERROR - 2021-09-13 08:22:15 --> Severity: Notice --> Undefined variable: sql /home/view360/public_html/j4edemo/application/models/User_model.php 7411
+ERROR - 2021-09-13 09:49:58 --> Could not find the language line "add_more"
+ERROR - 2021-09-13 11:51:31 --> Severity: Warning --> Invalid argument supplied for foreach() /home/view360/public_html/j4edemo/application/views/themes/default/Backend/event/event_detail.php 78
+ERROR - 2021-09-13 11:51:51 --> Severity: Warning --> Invalid argument supplied for foreach() /home/view360/public_html/j4edemo/application/views/themes/default/Backend/event/event_detail.php 78
+ERROR - 2021-09-13 11:52:01 --> Severity: Warning --> Invalid argument supplied for foreach() /home/view360/public_html/j4edemo/application/views/themes/default/Backend/event/event_detail.php 78

@@ -1,0 +1,11 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2022-07-23 08:16:44 --> Query error: Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation 'like' - Invalid query: select postdetail.*,user.id from `postdetail` INNER JOIN user ON user.id = postdetail.post_userid  where post_status = '1'  AND (  (postdetail.post_description LIKE '%सतन%'))
+ERROR - 2022-07-23 08:16:44 --> Severity: error --> Exception: Call to a member function result() on boolean /var/www/html/admin/application/models/User_model.php 10715
+ERROR - 2022-07-23 17:48:58 --> Severity: Warning --> Use of undefined constant base_url - assumed 'base_url' (this will throw an Error in a future version of PHP) /var/www/html/admin/application/views/themes/default/Generic/dashboard_admin.php 52
+ERROR - 2022-07-23 17:48:58 --> Severity: Warning --> Use of undefined constant base_url - assumed 'base_url' (this will throw an Error in a future version of PHP) /var/www/html/admin/application/views/themes/default/Generic/dashboard_admin.php 68
+ERROR - 2022-07-23 17:48:58 --> Severity: Warning --> Use of undefined constant base_url - assumed 'base_url' (this will throw an Error in a future version of PHP) /var/www/html/admin/application/views/themes/default/Generic/dashboard_admin.php 85
+ERROR - 2022-07-23 17:48:58 --> Severity: Warning --> Use of undefined constant base_url - assumed 'base_url' (this will throw an Error in a future version of PHP) /var/www/html/admin/application/views/themes/default/Generic/dashboard_admin.php 101
+ERROR - 2022-07-23 17:48:58 --> Severity: Warning --> Use of undefined constant base_url - assumed 'base_url' (this will throw an Error in a future version of PHP) /var/www/html/admin/application/views/themes/default/Generic/dashboard_admin.php 119
+ERROR - 2022-07-23 17:48:58 --> Severity: Warning --> Use of undefined constant base_url - assumed 'base_url' (this will throw an Error in a future version of PHP) /var/www/html/admin/application/views/themes/default/Generic/dashboard_admin.php 136
+ERROR - 2022-07-23 17:48:58 --> Severity: Warning --> Use of undefined constant base_url - assumed 'base_url' (this will throw an Error in a future version of PHP) /var/www/html/admin/application/views/themes/default/Generic/dashboard_admin.php 152
