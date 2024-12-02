@@ -20,6 +20,11 @@ $user_info = $this->db->where('id', $this->session->userdata('userid'))->get('us
             </li>
 
             <li>
+                <h4>Events</h4>
+                <a href="/dashboard/events" class=""> <img src="<?= base_url('assets/') ?>images/icon/dbl9.png" alt="" loading="lazy">Events</a>
+            </li>
+
+            <li>
                 <h4>Payment & Promotions</h4>
                 <a href="<?= base_url('payments') ?>"
                     class=""><img src="<?= base_url('assets/') ?>images/icon/dbl9.png"

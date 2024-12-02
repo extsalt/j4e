@@ -10,6 +10,7 @@ $route['login'] = 'home/login';
 $route['verify'] = 'home/verify';
 $route['register'] = 'home/register';
 $route['dashboard'] = 'dashboard/index';
+$route['dashboard/events'] = 'dashboardEvent/index';
 $route['point_history'] = 'home/point_history';
 $route['edit_profile'] = 'home/edit_profile';
 $route['payments'] = 'home/payments';
