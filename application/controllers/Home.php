@@ -10,6 +10,7 @@ class Home extends CI_Controller
     {
         $this->load->view('home');
     }
+
     public function login()
     {
         if ($_POST) {
@@ -28,6 +29,7 @@ class Home extends CI_Controller
                 'referred_by' => $this->input->post('referred_by'),
                 'packages_id' => $this->input->post('packages_id')
             );
+            $this->session->set_userdata('isLogin', 1);
             //                print_r($register_details);die;
             $this->session->set_userdata('register_details', $register_details);
             $data['amount'] = $pack_info->pack_price;
@@ -319,7 +321,7 @@ class Home extends CI_Controller
     }
     public function dashboard()
     {
-        if (!$this->session->userdata('isLogIn')) {
+        if (!$this->session->userdata('isLogIn') && 0) {
             $this->session->set_flashdata('message', 'Please Login to continue...!!!');
             redirect('login');
         } else {
