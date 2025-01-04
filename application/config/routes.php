@@ -11,12 +11,22 @@ $route['verify'] = 'home/verify';
 $route['register'] = 'home/register';
 $route['dashboard'] = 'dashboard/index';
 $route['dashboard/events'] = 'dashboardEvent/index';
+$route['dashboard/events/create'] = 'dashboardEvent/create';
 $route['point_history'] = 'home/point_history';
 $route['edit_profile'] = 'home/edit_profile';
 $route['payments'] = 'home/payments';
 $route['logout'] = 'home/logout';
 $route['about'] = 'home/about';
 
+/*************************************************************
+ * API
+ ***********************************************************/
+$route['api/search'] = 'Api/UserController/index';
+$route['api/members'] = 'Api/UserController/getMemberById';
+$route['api/services'] = 'Api/ServiceController/index';
+/*************************************************************
+ * API
+ ***********************************************************/
 $route['faq'] = 'home/faq';
 
 $route['business_category'] = 'home/business_category';
@@ -39,3 +49,9 @@ $route['reviews/(:any)'] = 'home/reviews/$1';
 
 $route['terms_conditions'] = 'home/terms_conditions';
 $route['privacy_policy'] = 'home/privacy_policy';
+
+/*************************************************************
+ * 
+ * API 
+ * 
+ ***********************************************************/

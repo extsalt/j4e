@@ -1,0 +1,21 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2025-01-01 06:52:07 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= ''
+WHERE `id` = '662'' at line 1 - Invalid query: UPDATE `user_package_features` SET  = ''
+WHERE `id` = '662'
+ERROR - 2025-01-01 12:34:38 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= ''
+WHERE `id` = '662'' at line 1 - Invalid query: UPDATE `user_package_features` SET  = ''
+WHERE `id` = '662'
+ERROR - 2025-01-01 12:36:21 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= ''
+WHERE `id` = '662'' at line 1 - Invalid query: UPDATE `user_package_features` SET  = ''
+WHERE `id` = '662'
+ERROR - 2025-01-01 12:36:32 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= ''
+WHERE `id` = '663'' at line 1 - Invalid query: UPDATE `user_package_features` SET  = ''
+WHERE `id` = '663'
+ERROR - 2025-01-01 12:36:53 --> Severity: Warning --> Illegal string offset 'requirementsid' /var/www/html/admin/application/models/User_model.php 5634
+ERROR - 2025-01-01 12:36:55 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= ''
+WHERE `id` = '663'' at line 1 - Invalid query: UPDATE `user_package_features` SET  = ''
+WHERE `id` = '663'
+ERROR - 2025-01-01 12:37:06 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= ''
+WHERE `id` = '662'' at line 1 - Invalid query: UPDATE `user_package_features` SET  = ''
+WHERE `id` = '662'

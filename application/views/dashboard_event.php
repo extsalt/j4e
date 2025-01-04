@@ -8,7 +8,9 @@
                 <div class="js-dashboard-container mt-5">
                     <div class="js-event-toolbar-container d-flex justify-content-end">
                         <div class="js-event-toolbar">
-                            <button class="btn btn-primary">Create Event</button>
+                            <a href="/dashboard/events/create">
+                                <button class="btn btn-primary">Create Event</button>
+                            </a>
                         </div>
                     </div>
                     <div class="js-event-table my-4 border-1">

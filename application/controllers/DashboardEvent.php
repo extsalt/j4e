@@ -19,4 +19,9 @@ class dashboardEvent extends CI_Controller
             $this->load->view('dashboard_event');
         }
     }
+
+    public function create()
+    {
+        $this->load->view('dashboard_event_create');
+    }
 }
