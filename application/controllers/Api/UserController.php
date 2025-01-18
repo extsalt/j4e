@@ -33,16 +33,14 @@ class UserController extends CI_Controller
             $sql .= " AND `business_experties` LIKE '%$service%' ";
         }
         $sql .= " LIMIT 20";
-        //return response as array rather than standard object
-
         $results = $this->db->query($sql)->result_array();
         $response = [];
         foreach ($results as $result) {
             $member = [];
             $member['id'] = $result['id'];
-            $member['firstName'] = $result['first_name'] ?? '';
-            $member['middleName'] = $result['middle_name'] ?? '';
-            $member['lastName'] = $result['last_name'] ?? '';
+            $member['firstName'] = ucfirst(strtolower($result['first_name'])) ?? '';
+            $member['middleName'] = ucfirst(strtolower($result['middle_name'])) ?? '';
+            $member['lastName'] = ucfirst(strtolower($result['last_name'])) ?? '';
             $member['phone'] = $result['phone'] ?? '';
             $member['designation'] = $result['designation'] ?? '';
             $member['company'] = $result['company'] ?? '';
