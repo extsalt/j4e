@@ -18,13 +18,13 @@ class UserController extends CI_Controller
         $location = $_GET['location'];
         $service = $_GET['service'];
         $industry = $_GET['industry'];
-        $page = $_GET['page'] ?? 1;
+        $page = $_GET['page'] ?: 1;
         $limit = 20;
         $offset = ($page - 1) * $limit;
         $sql = "SELECT `id`,`first_name`,`middle_name`,`last_name`,`phone`,`designation`,`company`,`avatar`,`company_address`,
                 `business_category`,`membership_type`,`target_audiance`,`business_entity`,`business_experties`,`business_type` FROM user WHERE user_type = '1' AND membership_type IN (2, 1) ";
         if ($query) {
-            $sql .= " AND `first_name` LIKE '%$query%' OR `middle_name` LIKE '%query%' OR `last_name` LIKE '%$query%' ";
+            $sql .= " AND (`first_name` LIKE '%$query%' OR `middle_name` LIKE '%query%' OR `last_name` LIKE '%$query%') ";
         }
         if ($location) {
             $sql .= " AND `company_address` LIKE '%$location%' ";
