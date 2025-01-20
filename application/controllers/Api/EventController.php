@@ -43,15 +43,24 @@ class EventController extends CI_Controller
         echo @json_encode($response);
     }
 
-    public function getMemberById()
+    public function getEventById($eventID)
     {
-        $memberID = $_GET["id"];
-        if (empty($memberID)) {
+        if (empty($eventID)) {
             echo @json_encode([]);
             die;
         }
-        $sql = "SELECT * FROM user WHERE id = '$memberID' LIMIT 1";
-        $results = $this->db->query($sql)->row();
-        echo @json_encode($results);
+        $sql = "SELECT `event_id`,`event_title`,`event_description`,`event_address`,`event_startdate`,`event_enddate`,`event_fees`,`event_guestfees`,`event_ticketqty`,`event_thumbnil` FROM events WHERE `event_id` = $eventID LIMIT 1";
+        $result = $this->db->query($sql)->row_array();
+        $event['id'] = $result['event_id'];
+        $event['title'] = ucfirst($result['event_title']) ?? '';
+        $event['description'] =  $result['event_description'] ?? '';
+        $event['address'] = $result['event_address'] ?? '';
+        $event['startDate'] = $result['event_startdate'] ?? '';
+        $event['endDate'] = $result['event_enddate'] ?? '';
+        $event['coverPhoto'] = "https://just4entrepreneurs.com/admin/upload/events/$result[event_thumbnil]" ?? '';
+        $event['eventFees'] = $result['event_fees'] ?? '';
+        $event['guestFees'] = $result['event_guestfees'] ?? '';
+        $event['totalTicket'] = $result['event_ticketqty'] ?? '';
+        echo @json_encode($event);
     }
 }
