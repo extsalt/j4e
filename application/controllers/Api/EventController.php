@@ -80,7 +80,7 @@ class EventController extends CI_Controller
         $event['guestFees'] = $result['event_guestfees'] ?? '';
         $event['totalTicket'] = $result['event_ticketqty'] ?? '';
 
-        $sql = "SELECT u.`id`, u.`first_name` as `firstName`, u.`middle_name`, u.`designation`, u.`company_address` as `companyAddress`, u.`membership_type` as `membershipType`, u.`middle_name` as `middleName`, u.`last_name` as `lastName`, e.`interested` FROM user u INNER JOIN event_booking e ON e.user_id = u.id WHERE e.event_id = $eventID";
+        $sql = "SELECT u.`id`, u.`first_name` as `firstName`, u.`middle_name`, u.`designation`, u.`company_address` as `companyAddress`, u.`avatar`, u.`membership_type` as `membershipType`, u.`middle_name` as `middleName`, u.`last_name` as `lastName`, e.`interested` FROM user u INNER JOIN event_booking e ON e.user_id = u.id WHERE e.event_id = $eventID";
         $results = $this->db->query($sql)->result_array();
         foreach ($results as &$result) {
             $result['firstName'] = ucfirst($result['firstName']) ?? '';
@@ -94,6 +94,14 @@ class EventController extends CI_Controller
             }
             if ($result['interested'] == '2') {
                 $result['interested'] = 'May be';
+            }
+            if ($result['membership_type'] == '2') {
+                $member['membershipType'] = 'Registered';
+            } else {
+                $member['membershipType'] = 'Visitor Member';
+            }
+            if (empty($result['avatar'])) {
+                $result['avatar'] = 'https://j4e.s3.ap-south-1.amazonaws.com/public/default.png';
             }
         }
         $event['members'] = $results;
