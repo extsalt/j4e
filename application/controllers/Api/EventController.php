@@ -96,9 +96,9 @@ class EventController extends CI_Controller
                 $result['interested'] = 'May be';
             }
             if ($result['membership_type'] == '2') {
-                $member['membershipType'] = 'Registered';
+                $result['membershipType'] = 'Registered';
             } else {
-                $member['membershipType'] = 'Visitor Member';
+                $result['membershipType'] = 'Visitor Member';
             }
             if (empty($result['avatar'])) {
                 $result['avatar'] = urlencode("https://j4e.s3.ap-south-1.amazonaws.com/public/default.png");
