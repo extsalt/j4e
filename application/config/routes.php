@@ -27,6 +27,7 @@ $route['api/services'] = 'Api/ServiceController/index';
 $route['api/events'] = 'Api/EventController/index';
 // add routes for new getting events by id
 $route['api/events/(:any)'] = 'Api/EventController/getEventById/$1';
+$route['api/events/(:any)/members'] = 'Api/EventController/getMembersOfEvent/$1';
 /*************************************************************
  * API
  ***********************************************************/
