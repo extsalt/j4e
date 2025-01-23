@@ -92,7 +92,7 @@ class EventController extends CI_Controller
             if ($result['interested'] == '0') {
                 $result['interested'] = 'Not Attending';
             }
-            if ($result['interested'] == '2') {
+            if ($result['interested'] == '2' || $result['interested'] == '3' || $result['interested'] == '') {
                 $result['interested'] = 'May be';
             }
             if ($result['membership_type'] == '2') {
