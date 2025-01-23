@@ -101,7 +101,7 @@ class EventController extends CI_Controller
                 $member['membershipType'] = 'Visitor Member';
             }
             if (empty($result['avatar'])) {
-                $result['avatar'] = 'https://j4e.s3.ap-south-1.amazonaws.com/public/default.png';
+                $result['avatar'] = urlencode("https://j4e.s3.ap-south-1.amazonaws.com/public/default.png");
             }
         }
         $event['members'] = $results;
