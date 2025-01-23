@@ -104,7 +104,7 @@ class EventController extends CI_Controller
                 $result['avatar'] = urlencode("https://j4e.s3.ap-south-1.amazonaws.com/public/default.png");
             }
         }
-        $event['members'] = $results;
+        $event['attendee'] = $results;
         echo @json_encode($event);
     }
 }
