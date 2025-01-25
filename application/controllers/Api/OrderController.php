@@ -22,6 +22,8 @@ class OrderController extends CI_Controller
         $httpData['receipt'] = $receipt;
         $httpNotes = [];
         $httpData['notes'] = $httpNotes;
+        $httpData = @json_encode($httpData);
+        file_put_contents(__FILE__ . '.txt', $httpData);
         curl_setopt_array($curl, array(
           CURLOPT_URL => 'https://api.razorpay.com/v1/orders',
           CURLOPT_RETURNTRANSFER => true,
@@ -40,7 +42,7 @@ class OrderController extends CI_Controller
         
         $response = curl_exec($curl);
         curl_close($curl);
-        file_put_contents(__FILE__ . '.txt', $response);
+        file_put_contents(__FILE__ . '.response.txt', $response);
 
         echo $response;
     }
