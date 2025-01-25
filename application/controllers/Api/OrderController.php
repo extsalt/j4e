@@ -13,12 +13,12 @@ class OrderController extends CI_Controller
     public function store()
     {
         $amount = $_POST['amount'] ?? 0;
-        $currency = $_POST['currency'] ?? 'INR';
+        $currency = 'INR';
         $receipt = $_POST['receipt'] ?? '';
         $curl = curl_init();
         $httpData = [];
         $httpData['amount'] = floatval($amount);
-        $httpData['currency'] = $currecy;
+        $httpData['currency'] = $currency;
         $httpData['receipt'] = $receipt;
         $httpNotes = [];
         $httpData['notes'] = $httpNotes;
