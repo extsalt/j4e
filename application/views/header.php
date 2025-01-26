@@ -27,6 +27,11 @@
         <meta property="og:image" content="<?= base_url('admin/upload/events/'.$event_info->event_thumbnil) ?>" />
         <meta property="og:url" content="<?= base_url('admin/upload/events/'.$event_info->id) ?>" />
         <meta property="og:type" content="product" />
+        <meta property="twitter:title" content="<?= $event_info->event_title ?>" />
+        <meta property="twitter:description" content="<?= strip_tags($event_info->event_description) ?>" />
+        <meta property="twitter:image" content="<?= base_url('admin/upload/events/'.$event_info->event_thumbnil) ?>" />
+        <meta property="twitter:url" content="<?= base_url('admin/upload/events/'.$event_info->id) ?>" />
+        <meta property="twitter:type" content="product" />
     <? } ?>
 </head>
 
