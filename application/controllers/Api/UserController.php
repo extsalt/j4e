@@ -74,7 +74,7 @@ class UserController extends CI_Controller
             die;
         }
         $sql = $sql = "SELECT `id`,`first_name`,`middle_name`,`last_name`,`phone`,`designation`,`company`,`avatar`,`company_address`,
-        `business_category`,`membership_type`,`target_audiance`,`business_entity`,`business_experties`,`business_type`
+        `business_category`,`membership_type`,`target_audiance`,`business_entity`,`business_experties`,`business_type`,`about_company`
         FROM user WHERE id='$memberID'";
         $result = $this->db->query($sql)->row_array();
         $member = [];
@@ -92,6 +92,8 @@ class UserController extends CI_Controller
         $member['businessEntity'] = $result['business_entity'] ?? '';
         $member['businessExpertise'] = $result['business_experise'] ?? '';
         $member['businessType'] = $result['business_type'] ?? '';
+        $member['businessType'] = $result['business_type'] ?? '';
+        $member['aboutCompany'] = $result['about_company'] ?? '';
         if ($result['membership_type'] == '2') {
             $member['membershipType'] = 'Registered';
         } else {
