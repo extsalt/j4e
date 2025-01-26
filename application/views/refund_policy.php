@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row">
             <div class="plainpg">
-                <h1>Privacy Policy</h1>
+                <h1>Refund Policy</h1>
                 <p>
                     Just 4 Us believes in helping its customers as far as possible, and has therefore a liberal cancellation policy. Under this policy: Cancellations will be considered only if the request is made within 16-30 days of placing the order. However, the cancellation request may not be entertained if the orders have been communicated to the vendors/merchants and they have initiated the process of shipping them. Just 4 Us does not accept cancellation requests for perishable items like flowers, eatables etc.
                 </p>
