@@ -21,10 +21,10 @@
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>css/style.css">
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/fonts.css">
     <? if ($tag == 'event-detiails') { ?>
-        <meta property="og:title" content="The page title" />
-        <meta property="og:description" content="A brief description of the page" />
-        <meta property="og:image" content="https://example.com/thumbnail.jpg" />
-        <meta property="og:url" content="https://example.com" />
+        <meta property="og:title" content="<?= $event_info->event_title ?>" />
+        <meta property="og:description" content="<?= $event_info->description ?>" />
+        <meta property="og:image" content="<?= base_url('admin/upload/events/'.$event_info->event_thumbnil) ?>" />
+        <meta property="og:url" content="<?= base_url('admin/upload/events/'.$event_info->id) ?>" />
     <? } ?>
 </head>
 
