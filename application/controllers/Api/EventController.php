@@ -35,6 +35,7 @@ class EventController extends CI_Controller
             $member['eventFees'] = $result['event_fees'] ?? '';
             $member['guestFees'] = $result['event_guestfees'] ?? '';
             $member['totalTicket'] = $result['event_ticketqty'] ?? '';
+            $member['shareURL'] = "https://just4entrepreneurs.com/event_detail/$result[event_id]" ?? '';
             $response[] = $member;
         }
         echo @json_encode($response);
