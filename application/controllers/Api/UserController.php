@@ -73,8 +73,30 @@ class UserController extends CI_Controller
             echo @json_encode([]);
             die;
         }
-        $sql = "SELECT * FROM user WHERE id = '$memberID' LIMIT 1";
-        $results = $this->db->query($sql)->row();
-        echo @json_encode($results);
+        $sql = $sql = "SELECT `id`,`first_name`,`middle_name`,`last_name`,`phone`,`designation`,`company`,`avatar`,`company_address`,
+        `business_category`,`membership_type`,`target_audiance`,`business_entity`,`business_experties`,`business_type`
+        FROM user WHERE id='$memberID'";
+        $result = $this->db->query($sql)->row_array();
+        $member = [];
+        $member['id'] = $result['id'];
+        $member['firstName'] = ucfirst(strtolower($result['first_name'])) ?? '';
+        $member['middleName'] = ucfirst(strtolower($result['middle_name'])) ?? '';
+        $member['lastName'] = ucfirst(strtolower($result['last_name'])) ?? '';
+        $member['phone'] = $result['phone'] ?? '';
+        $member['designation'] = $result['designation'] ?? '';
+        $member['company'] = $result['company'] ?? '';
+        $member['avatar'] = $result['avatar'] ?? '';
+        $member['companyAddress'] = $result['company_address'] ?? '';
+        $member['businessCategory'] = $result['business_category'] ?? '';
+        $member['targetAudience'] = $result['target_audience'] ?? '';
+        $member['businessEntity'] = $result['business_entity'] ?? '';
+        $member['businessExpertise'] = $result['business_experise'] ?? '';
+        $member['businessType'] = $result['business_type'] ?? '';
+        if ($result['membership_type'] == '2') {
+            $member['membershipType'] = 'Registered';
+        } else {
+            $member['membershipType'] = 'Visitor Member';
+        }
+        echo @json_encode($result);
     }
 }
