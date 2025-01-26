@@ -55,3 +55,4 @@ $route['reviews/(:any)'] = 'home/reviews/$1';
 
 $route['terms_conditions'] = 'home/terms_conditions';
 $route['privacy_policy'] = 'home/privacy_policy';
+$route['refund_policy'] = 'home/refund_policy';
