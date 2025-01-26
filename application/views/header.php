@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/fonts.css">
     <? if ($tag == 'event-detiails') { ?>
         <meta property="og:title" content="<?= $event_info->event_title ?>" />
-        <meta property="og:description" content="<?= $event_info->description ?>" />
+        <meta property="og:description" content="<?= $event_info->event_description ?>" />
         <meta property="og:image" content="<?= base_url('admin/upload/events/'.$event_info->event_thumbnil) ?>" />
         <meta property="og:url" content="<?= base_url('admin/upload/events/'.$event_info->id) ?>" />
         <meta property="og:type" content="product" />
