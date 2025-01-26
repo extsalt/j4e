@@ -58,7 +58,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                               $check4 = $this->db->where('bns_trans_touser',$link)->or_where('bns_trans_byuser',$link)->get('business_transaction')->result();
                               $check5 = $this->db->where('request_to',$link)->or_where('request_from',$link)->get('connection')->result();
                               $check6 = $this->db->where('attend_userid',$link)->get('event_attending_status')->result();
-                              $check7 = $this->db->where('booking_userid',$link)->get('event_booking')->result();
+                              $check7 = $this->db->where('user_id',$link)->get('event_booking')->result();
                               $check8 = $this->db->where('event_invite_byuserid',$link)->or_where('event_invite_touserid',$link)->get('event_invite')->result();
                               $check9 = $this->db->where('user_id',$link)->get('event_ratings_reviews')->result();
                               $check10 = $this->db->where('followup_byuserid',$link)->or_where('followup_touserid',$link)->get('followup')->result();
