@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="theme-color" content="#76cef1" />
     <meta property="og:image" content="<?= base_url('assets/') ?>images/home/6974083357bizbook-white.png" />
+    <meta property="og:logo" content="<?= base_url('assets/') ?>images/home/6974083357bizbook-white.png" />
     <link rel="shortcut icon" href="<?= base_url('assets/') ?>images/fevicon 9898.png"
         type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Oswald:700|Source+Sans+Pro:300,400,600,700&display=swap"
@@ -25,6 +26,7 @@
         <meta property="og:description" content="<?= $event_info->description ?>" />
         <meta property="og:image" content="<?= base_url('admin/upload/events/'.$event_info->event_thumbnil) ?>" />
         <meta property="og:url" content="<?= base_url('admin/upload/events/'.$event_info->id) ?>" />
+        <meta property="og:type" content="product" />
     <? } ?>
 </head>
 
