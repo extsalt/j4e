@@ -1084,4 +1084,8 @@ class Home extends CI_Controller
         //            $data['contact_info'] = $this->db->where('contact_info_profileid',$data['profile_info']->info_profileid)->get('user_business_contact_info')->row();
         $this->load->view('reviews', $data);
     }
+    public function refund_policy()
+    {
+        $this->load->view('refund_policy');
+    }
 }
