@@ -20,9 +20,12 @@
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>css/theme-color.php">
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>css/style.css">
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/fonts.css">
-    <?php if ($this->session->userdata('isLogIn')) { ?>
-        <script src="//unpkg.com/alpinejs" defer></script>
-    <?php } ?>
+    <? if ($tag == 'event-detiails') { ?>
+        <meta property="og:title" content="The page title" />
+        <meta property="og:description" content="A brief description of the page" />
+        <meta property="og:image" content="https://example.com/thumbnail.jpg" />
+        <meta property="og:url" content="https://example.com" />
+    <? } ?>
 </head>
 
 <body>

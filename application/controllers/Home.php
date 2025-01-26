@@ -793,6 +793,8 @@ class Home extends CI_Controller
     {
         $this->load->view('events');
     }
+
+
     public function event_detail($id)
     {
         $data['event_info'] = $this->db->where('event_id', $id)->get('events')->row();
@@ -822,6 +824,8 @@ class Home extends CI_Controller
                 $data['order_data'] = $razorpayOrder;
             }
         }
+        var_dump($data['event_info']);
+        die;
         //            $data['gallery_info'] = $this->db->where('event_gallery_eventid',$id)->get('event_gallery')->result();
         $this->load->view('event_detail', $data);
     }

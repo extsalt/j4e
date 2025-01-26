@@ -1,3 +1,4 @@
+<? $tag = 'event-details'; ?>
 <?php include 'header.php'; ?>
 <?php include 'menu1.php'; ?>
 <!-- START -->
