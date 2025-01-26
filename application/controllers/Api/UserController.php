@@ -14,7 +14,7 @@ class UserController extends CI_Controller
 
     public function index()
     {
-        $query = strtolower($_GET['query']);
+        $query = strtolower(trim($_GET['query']));
         $location = $_GET['location'];
         $service = $_GET['service'];
         $industry = $_GET['industry'];
