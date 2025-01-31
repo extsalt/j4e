@@ -1,6 +1,6 @@
 <?php
 
-class UserModel extends CI_Model
+class ApiTokenModel extends CI_Model
 {
     public function __construct()
     {
