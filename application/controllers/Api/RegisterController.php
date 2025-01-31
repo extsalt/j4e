@@ -35,7 +35,7 @@ class RegisterController extends CI_Controller
         }
         $postData['password'] = password_hash($postData['password'], PASSWORD_DEFAULT);
         $postData['first_name'] = strip_tags(trim($postData['name']));
-        $postData['email'] = filter_var(strip_tags(trim($postData['email'])), FILTER_SANITIZE_EMAIL);
+        $postData['email_address'] = filter_var(strip_tags(trim($postData['email'])), FILTER_SANITIZE_EMAIL);
         $insert = $this->UserModel->insert_user($postData);
         if ($insert) {
             http_response_code(200);
