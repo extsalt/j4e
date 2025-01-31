@@ -33,12 +33,10 @@ class RegisterController extends CI_Controller
             echo json_encode(array('message' => 'User already exists'));
             return;
         }
-        $postData['password'] = password_hash($postData['password'], PASSWORD_DEFAULT);
-        $postData['first_name'] = strip_tags(trim($postData['name']));
-        $postData['email_address'] = filter_var(strip_tags(trim($postData['email'])), FILTER_SANITIZE_EMAIL);
-        $insert = $this->UserModel->insert_user($postData);
-        var_dump($insert);
-        die;
+        $inserData['password'] = password_hash($postData['password'], PASSWORD_DEFAULT);
+        $insertData['first_name'] = strip_tags(trim($postData['name']));
+        $insertData['email_address'] = filter_var(strip_tags(trim($postData['email'])), FILTER_SANITIZE_EMAIL);
+        $insert = $this->UserModel->insert_user($insertData);
         if ($insert) {
             http_response_code(200);
             echo json_encode(array('status' => 'success', 'message' => 'User created successfully'));
