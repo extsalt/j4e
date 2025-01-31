@@ -18,7 +18,7 @@ class UserController extends CI_Controller
         $location = $_GET['location'] ?? '';
         $service = $_GET['service'] ?? '';
         $industry = $_GET['industry'] ?? '';
-        $page = $_GET['page'] ?: 1;
+        $page = $_GET['page'] ?? 1;
         $limit = 20;
         $query = @explode(' ', $query);
         $offset = ($page - 1) * $limit;
