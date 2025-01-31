@@ -22,7 +22,7 @@ class RegisterController extends CI_Controller
         $postData = $this->input->post();
         if (empty($postData['name']) || empty($postData['email']) || empty($postData['password'])) {
             http_response_code(400);
-            echo json_encode(array('message' => 'Name, email and password are required'));
+            echo json_encode(array('status' => 'error','message' => 'Name, email and password are required'));
             return;
         }
         //sanitize and validate email
@@ -30,7 +30,7 @@ class RegisterController extends CI_Controller
         $user = $this->UserModel->getUserByEmail($email);
         if ($user) {
             http_response_code(400);
-            echo json_encode(array('message' => 'User already exists'));
+            echo json_encode(array('status' => 'error', 'message' => 'User already exists'));
             return;
         }
         $insertData['password'] = password_hash($postData['password'], PASSWORD_DEFAULT);
