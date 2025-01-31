@@ -1,6 +1,6 @@
 <?php
 
-
+use phpDocumentor\Reflection\DocBlock\Tags\Var_;
 
 defined('BASEPATH') or exit('No direct script access allowed');
 
@@ -37,6 +37,8 @@ class RegisterController extends CI_Controller
         $postData['first_name'] = strip_tags(trim($postData['name']));
         $postData['email_address'] = filter_var(strip_tags(trim($postData['email'])), FILTER_SANITIZE_EMAIL);
         $insert = $this->UserModel->insert_user($postData);
+        var_dump($insert);
+        die;
         if ($insert) {
             http_response_code(200);
             echo json_encode(array('status' => 'success', 'message' => 'User created successfully'));
