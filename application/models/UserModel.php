@@ -25,6 +25,8 @@ class UserModel extends CI_Model
 
     public function getUserByEmail($email)
     {
+        var_dump($this->db);
+        die;
         $query = $this->db->get_where('user', array('email' => $email));
         var_dump($query);
         die;
