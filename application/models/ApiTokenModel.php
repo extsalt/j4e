@@ -8,13 +8,13 @@ class UserModel extends CI_Model
         $this->load->database();
     }
 
-    public function get_user_id_by_token($token)
+    public function getUserByToken($token)
     {
         $query = $this->db->get_where('api_token', array('token' => $token));
         return $query->row();
     }
 
-    public function insert_token($data)
+    public function insertToken($data)
     {
         $this->db->insert('api_token', $data);
         return $this->db->insert_id();
