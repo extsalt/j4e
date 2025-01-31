@@ -9,7 +9,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
  * @property ApiTokenModel $ApiTokenModel
  * @property CI_Input $input
  */
-class UserController extends CI_Controller
+class LoginController extends CI_Controller
 {
     public function __construct()
     {
