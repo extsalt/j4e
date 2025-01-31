@@ -4,6 +4,10 @@
 
 defined('BASEPATH') or exit('No direct script access allowed');
 
+/**
+ * @property UserModel $UserModel
+ * @property CI_Input $input
+ */
 class RegisterController extends CI_Controller
 {
     public function __construct()
@@ -14,18 +18,24 @@ class RegisterController extends CI_Controller
 
     public function register()
     {
-        // Load the User_model
         $this->load->model('UserModel');
-        // get the post data
         $postData = $this->input->post();
-        // check if the user already exists
-        $user = $this->UserModel->getUserByEmail($postData['email']);
-        if ($user) {
+        if (empty($postData['name']) || empty($postData['email']) || empty($postData['password'])) {
             http_response_code(400);
-            echo json_encode(array('status' => 'error', 'message' => 'User already exists'));
+            echo json_encode(array('message' => 'Name, email and password are required'));
             return;
         }
-        // insert user data
+        //sanitize and validate email
+        $email = filter_var($postData['email'], FILTER_SANITIZE_EMAIL);
+        $user = $this->UserModel->getUserByEmail($email);
+        if ($user) {
+            http_response_code(400);
+            echo json_encode(array('message' => 'User already exists'));
+            return;
+        }
+        $postData['password'] = password_hash($postData['password'], PASSWORD_DEFAULT);
+        $postData['first_name'] = strip_tags(trim($postData['name']));
+        $postData['email'] = filter_var(strip_tags(trim($postData['email'])), FILTER_SANITIZE_EMAIL);
         $insert = $this->UserModel->insert_user($postData);
         if ($insert) {
             http_response_code(200);
