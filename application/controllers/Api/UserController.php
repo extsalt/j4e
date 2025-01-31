@@ -14,10 +14,10 @@ class UserController extends CI_Controller
 
     public function index()
     {
-        $query = strtolower(strip_tags(trim($_GET['query'])));
-        $location = $_GET['location'];
-        $service = $_GET['service'];
-        $industry = $_GET['industry'];
+        $query = strtolower(strip_tags(trim($_GET['query'] ?? '')));
+        $location = $_GET['location'] ?? '';
+        $service = $_GET['service'] ?? '';
+        $industry = $_GET['industry'] ?? '';
         $page = $_GET['page'] ?: 1;
         $limit = 20;
         $query = @explode(' ', $query);
