@@ -39,7 +39,7 @@ class RegisterController extends CI_Controller
         $insert = $this->UserModel->insert_user($insertData);
         if ($insert) {
             http_response_code(200);
-            echo json_encode(array('status' => 'success', 'message' => 'User created successfully'));
+            echo json_encode(array('status' => 'success', 'message' => 'User created successfully','token' => bin2hex(random_bytes(16))));
         } else {
             http_response_code(500);
             echo json_encode(array('status' => 'error', 'message' => 'Failed to create user'));
