@@ -21,6 +21,7 @@ $route['about'] = 'home/about';
 /*************************************************************
  * API
  ***********************************************************/
+$route['api/register'] = 'Api/RegisterController/register';
 $route['api/search'] = 'Api/UserController/index';
 $route['api/members'] = 'Api/UserController/getMemberById';
 $route['api/services'] = 'Api/ServiceController/index';
