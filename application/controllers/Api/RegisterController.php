@@ -1,7 +1,5 @@
 <?php
 
-use phpDocumentor\Reflection\DocBlock\Tags\Var_;
-
 defined('BASEPATH') or exit('No direct script access allowed');
 
 /**
