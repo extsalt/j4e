@@ -6,6 +6,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 /**
  * @property UserModel $UserModel
+ * @property ApiTokenModel $ApiTokenModel
  * @property CI_Input $input
  */
 class RegisterController extends CI_Controller
@@ -36,11 +37,15 @@ class RegisterController extends CI_Controller
         $insertData['password'] = password_hash($postData['password'], PASSWORD_DEFAULT);
         $insertData['first_name'] = strip_tags(trim($postData['name']));
         $insertData['email_address'] = filter_var(strip_tags(trim($postData['email'])), FILTER_SANITIZE_EMAIL);
-        $insert = $this->UserModel->insert_user($insertData);
-        if ($insert) {
+        $userInsertID = $this->UserModel->insert_user($insertData);
+        if ($userInsertID) {
             http_response_code(200);
             $token = bin2hex(random_bytes(16));
             $name = $insertData['first_name'];
+            $tokenInsertData['token'] = $token;
+            $tokenInsertData['user_id'] = $userInsertID;
+            $this->load->model('ApiTokenModel');
+            $tokenInsertID = $this->ApiTokenModel->insertToken($tokenInsertData);
             echo json_encode(array('status' => 'success', 'message' => 'User created successfully','token' => $token, 'name' => $name));
         } else {
             http_response_code(500);
