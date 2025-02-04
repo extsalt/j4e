@@ -20,10 +20,13 @@ class HomeController extends CI_Controller
 
     public function index()
     {
-        $this->load->model('UserModel');
-        $this->load->model('EventModel');
-        $events = $this->EventModel->get_events_home();
-        $users = $this->UserModel->get_user_home();
-        echo json_encode(array('status' => 'sucess', 'events' => $events, 'users' => $users));
+        $members = $this->db->query("SELECT id, first_name, last_name, company FROM user ORDER BY created_at DESC LIMIT 5")->result_array;
+        foreach ($members as &$member) {
+            $member['id'] = $member['id'];
+            $member['first_name'] = ucfirst($member['first_name']) ?? '';
+            $member['last_name'] = ucfirst($member['last_name']) ?? '';
+            $member['company'] = ucfirst($member['company']) ?? '';
+        }
+        echo json_encode(array('status' => 'sucess', 'events' => [], 'members' => $members));
     }
 }
