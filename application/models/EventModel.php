@@ -19,7 +19,6 @@ class EventModel extends CI_Model
             $member = [];
             $member['id'] = $result['event_id'];
             $member['title'] = ucfirst($result['event_title']) ?? '';
-            $member['description'] =  strip_tags($result['event_description']) ?? '';
             $member['address'] = $result['event_address'] ?? '';
             $member['startDate'] = $result['event_startdate'] ?? '';
             $member['endDate'] = $result['event_enddate'] ?? '';
