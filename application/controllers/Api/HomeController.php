@@ -20,7 +20,7 @@ class HomeController extends CI_Controller
 
     public function index()
     {
-        $members = $this->db->query("SELECT id, first_name, last_name, company FROM user ORDER BY created_at DESC LIMIT 5")->result_array;
+        $members = $this->db->query("SELECT id, first_name, last_name, company FROM user ORDER BY created_at DESC LIMIT 5")->result_array();
         foreach ($members as &$member) {
             $member['id'] = $member['id'];
             $member['first_name'] = ucfirst($member['first_name']) ?? '';
