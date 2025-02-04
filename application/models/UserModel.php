@@ -11,8 +11,7 @@ class UserModel extends CI_Model
 
     public function get_user_home()
     {
-        $sql = "SELECT `id`,`first_name`,`last_name`,`email_address`,`phone_number`,`password`,`created_at`,`updated_at` FROM user ";
-        $sql .= " ORDER BY `created_at` DESC LIMIT 5";
+        $sql = "SELECT `id`,`first_name`,`last_name`,`company` FROM user ORDER BY `created_at` DESC LIMIT 5";
         $results = $this->db->query($sql)->result_array();
         $response = [];
         foreach ($results as $result) {
@@ -20,11 +19,7 @@ class UserModel extends CI_Model
             $member['id'] = $result['id'];
             $member['first_name'] = ucfirst($result['first_name']) ?? '';
             $member['last_name'] = ucfirst($result['last_name']) ?? '';
-            $member['email_address'] = $result['email_address'] ?? '';
-            $member['phone_number'] = $result['phone_number'] ?? '';
-            $member['password'] = $result['password'] ?? '';
-            $member['created_at'] = $result['created_at'] ?? '';
-            $member['updated_at'] = $result['updated_at'] ?? '';
+            $member['company'] = ucfirst($result['company']) ?? '';
             $response[] = $member;
         }
         return $response;
