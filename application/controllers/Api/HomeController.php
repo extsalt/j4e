@@ -27,6 +27,8 @@ class HomeController extends CI_Controller
             $member['last_name'] = ucfirst($member['last_name']) ?? '';
             $member['company'] = ucfirst($member['company']) ?? '';
         }
-        echo json_encode(array('status' => 'sucess', 'events' => [], 'members' => $members));
+        $this->load->model('EventModel');
+        $events = $this->EventModel->get_events_home();
+        echo json_encode(array('events' => $events, 'members' => $members));
     }
 }
