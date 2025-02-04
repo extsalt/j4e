@@ -20,13 +20,14 @@ class HomeController extends CI_Controller
 
     public function index()
     {
-        $memberResults = $this->db->query("SELECT id, first_name, last_name, company FROM user ORDER BY created_time DESC LIMIT 5")->result_array();
+        $memberResults = $this->db->query("SELECT id, first_name, last_name, avatar, company FROM user ORDER BY created_time DESC LIMIT 5")->result_array();
         $members = [];
         foreach ($memberResults as $memberRow) {
             $member['id'] = $memberRow['id'];
             $member['firstName'] = ucfirst($memberRow['first_name']) ?? '';
             $member['lastName'] = ucfirst($memberRow['last_name']) ?? '';
             $member['company'] = ucfirst($memberRow['company']) ?? '';
+            $members['avatar'] = $memberRow['avatar'] ?? '';
             $members[] = $member;
         }
         $this->load->model('EventModel');
