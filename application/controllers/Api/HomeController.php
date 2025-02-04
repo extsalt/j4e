@@ -22,11 +22,11 @@ class HomeController extends CI_Controller
     {
         $memberResults = $this->db->query("SELECT id, first_name, last_name, company FROM user ORDER BY created_time DESC LIMIT 5")->result_array();
         $members = [];
-        foreach ($memberResults as &$memberRow) {
-            $member['id'] = $member['id'];
-            $member['firstName'] = ucfirst($member['first_name']) ?? '';
-            $member['lastName'] = ucfirst($member['last_name']) ?? '';
-            $member['company'] = ucfirst($member['company']) ?? '';
+        foreach ($memberResults as $memberRow) {
+            $member['id'] = $memberRow['id'];
+            $member['firstName'] = ucfirst($memberRow['first_name']) ?? '';
+            $member['lastName'] = ucfirst($memberRow['last_name']) ?? '';
+            $member['company'] = ucfirst($memberRow['company']) ?? '';
             $members[] = $member;
         }
         $this->load->model('EventModel');
