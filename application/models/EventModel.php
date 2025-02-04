@@ -8,6 +8,31 @@ class EventModel extends CI_Model
         $this->load->database();
     }
 
+    //  gets events from the database
+    public function get_events_home()
+    {
+        $sql = "SELECT `event_id`,`event_title`,`event_description`,`event_address`,`event_startdate`,`event_enddate`,`event_fees`,`event_guestfees`,`event_ticketqty`,`event_thumbnil` FROM events ";
+        $sql .= " ORDER BY `event_date` DESC LIMIT 5";
+        $results = $this->db->query($sql)->result_array();
+        $response = [];
+        foreach ($results as $result) {
+            $member = [];
+            $member['id'] = $result['event_id'];
+            $member['title'] = ucfirst($result['event_title']) ?? '';
+            $member['description'] =  strip_tags($result['event_description']) ?? '';
+            $member['address'] = $result['event_address'] ?? '';
+            $member['startDate'] = $result['event_startdate'] ?? '';
+            $member['endDate'] = $result['event_enddate'] ?? '';
+            $member['coverPhoto'] = "https://just4entrepreneurs.com/admin/upload/events/$result[event_thumbnil]" ?? '';
+            $member['eventFees'] = $result['event_fees'] ?? '';
+            $member['guestFees'] = $result['event_guestfees'] ?? '';
+            $member['totalTicket'] = $result['event_ticketqty'] ?? '';
+            $member['shareURL'] = "https://just4entrepreneurs.com/event_detail/$result[event_id]" ?? '';
+            $response[] = $member;
+        }
+        return $response;
+    }
+
     // Get all users from the 'users' table
     public function get_all_users()
     {

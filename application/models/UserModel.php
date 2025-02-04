@@ -9,6 +9,26 @@ class UserModel extends CI_Model
         $this->load->database();
     }
 
+    public function get_user_home()
+    {
+        $sql = "SELECT `id`,`first_name`,`last_name`,`email_address`,`phone_number`,`password`,`created_at`,`updated_at` FROM user ";
+        $sql .= " ORDER BY `created_at` DESC LIMIT 5";
+        $results = $this->db->query($sql)->result_array();
+        $response = [];
+        foreach ($results as $result) {
+            $member = [];
+            $member['id'] = $result['id'];
+            $member['first_name'] = ucfirst($result['first_name']) ?? '';
+            $member['last_name'] = ucfirst($result['last_name']) ?? '';
+            $member['email_address'] = $result['email_address'] ?? '';
+            $member['phone_number'] = $result['phone_number'] ?? '';
+            $member['password'] = $result['password'] ?? '';
+            $member['created_at'] = $result['created_at'] ?? '';
+            $member['updated_at'] = $result['updated_at'] ?? '';
+            $response[] = $member;
+        }
+        return $response;
+    }
     // Get all users from the 'users' table
     public function get_all_users()
     {
