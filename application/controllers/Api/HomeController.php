@@ -27,7 +27,7 @@ class HomeController extends CI_Controller
             $member['firstName'] = ucfirst($memberRow['first_name']) ?? '';
             $member['lastName'] = ucfirst($memberRow['last_name']) ?? '';
             $member['company'] = ucfirst($memberRow['company']) ?? '';
-            $members['avatar'] = $memberRow['avatar'] ?? '';
+            $member['avatar'] = $memberRow['avatar'] ?? '';
             $members[] = $member;
         }
         $this->load->model('EventModel');
