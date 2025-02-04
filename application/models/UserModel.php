@@ -12,7 +12,7 @@ class UserModel extends CI_Model
     public function get_user_home()
     {
         $sql = "SELECT `id`,`first_name`,`last_name`,`company` FROM user ORDER BY `created_at` DESC LIMIT 5";
-        $results = $this->db->query($sql)->result_array();
+        $results = $this->db->query($sql)->result();
         $response = [];
         foreach ($results as $result) {
             $member = [];
