@@ -13,7 +13,7 @@ class EventController extends CI_Controller
     public function index()
     {
         $query = $_GET['query'] ?? '';
-        $page = $_GET['page'] ?: 1;
+        $page = intval($_GET['page'] ?? 1) ?: 1;
         $limit = intval($_GET['limit'] ?? 0) ?: 20;
         $offset = ($page - 1) * $limit;
         $sql = "SELECT `event_id`,`event_title`,`event_description`,`event_address`,`event_startdate`,`event_enddate`,`event_fees`,`event_guestfees`,`event_ticketqty`,`event_thumbnil` FROM events ";
