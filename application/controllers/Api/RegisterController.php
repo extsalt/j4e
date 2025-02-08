@@ -19,7 +19,7 @@ class RegisterController extends CI_Controller
     {
         $this->load->model('UserModel');
         $postData = $this->input->post();
-        if (empty($postData['name']) || empty($postData['email']) || empty($postData['password'])) {
+        if (empty($postData['first_name']) || empty($postData['last_name']) || empty($postData['email']) || empty($postData['password'])) {
             http_response_code(400);
             echo json_encode(array('status' => 'error','message' => 'Name, email and password are required'));
             return;
@@ -33,18 +33,20 @@ class RegisterController extends CI_Controller
             return;
         }
         $insertData['password'] = password_hash($postData['password'], PASSWORD_DEFAULT);
-        $insertData['first_name'] = strip_tags(trim($postData['name']));
+        $insertData['first_name'] = strip_tags(trim($postData['first_name']));
+        $insertData['last_name'] = strip_tags(trim($postData['last_name']));
         $insertData['email_address'] = filter_var(strip_tags(trim($postData['email'])), FILTER_SANITIZE_EMAIL);
         $userInsertID = $this->UserModel->insert_user($insertData);
         if ($userInsertID) {
             http_response_code(200);
             $token = bin2hex(random_bytes(16));
-            $name = $insertData['first_name'];
+            $firstName = $insertData['first_name'];
+            $lastName = $insertData['last_name'];
             $tokenInsertData['token'] = $token;
             $tokenInsertData['user_id'] = $userInsertID;
             $this->load->model('ApiTokenModel');
             $tokenInsertID = $this->ApiTokenModel->insertToken($tokenInsertData);
-            echo json_encode(array('status' => 'success', 'message' => 'User created successfully','token' => $token, 'name' => $name));
+            echo json_encode(array('status' => 'success', 'message' => 'User created successfully','token' => $token, 'firstName' => $firstName, 'lastName' => $lastName));
         } else {
             http_response_code(500);
             echo json_encode(array('status' => 'error', 'message' => 'Failed to create user'));
