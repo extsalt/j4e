@@ -21,7 +21,7 @@ class RegisterController extends CI_Controller
         $postData = $this->input->post();
         if (empty($postData['first_name']) || empty($postData['last_name']) || empty($postData['email']) || empty($postData['password'])) {
             http_response_code(400);
-            echo json_encode(array('status' => 'error','message' => 'Name, email and password are required'));
+            echo json_encode(array('status' => 'error','message' => 'First name, last name, email and password are required'));
             return;
         }
         //sanitize and validate email
