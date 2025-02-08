@@ -35,7 +35,10 @@ class LoginController extends CI_Controller
             $tokenInsertData['user_id'] = $user->id;
             $this->load->model('ApiTokenModel');
             $tokenInsertID = $this->ApiTokenModel->insertToken($tokenInsertData);
-            echo json_encode(array('status' => 'success', 'message' => 'Login successful', 'token' => $token, 'name' => $user->first_name));
+            if ($user->avatar) {
+                $user->avatar = "https%3A%2F%2Fj4e.s3.ap-south-1.amazonaws.com%2Fpublic%2Fdefault.png";
+            }
+            echo json_encode(array('status' => 'success', 'message' => 'Login successful', 'token' => $token, 'name' => $user->first_name, 'last_name' => $user->last_name, 'avatar' => $user->avatar));
             return;
         }
         http_response_code(400);
