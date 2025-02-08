@@ -17,6 +17,14 @@ class RegisterController extends CI_Controller
 
     public function register()
     {
+        $mobile = "9517677829";
+        $url = "https://softsms.in/app/smsapi/index.php?key=671a271f67634&type=text&contacts=$mobile&senderid=JFENTP&peid=1201161225010387296&templateid=1207166624969359273&msg=One%20Time%20Password%20$otp%20to%20Login%20for%20J4E%20App.%20If%20you%20didn%27t%20initiate,%20report%20as%20FRAUD%20on%209850325204%20J4E%20Team";
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        $response = curl_exec($ch);
+        file_put_contents(__FILE__ . '.log', json_encode(compact('url', 'response')));
+        curl_close($ch);
         $this->load->model('UserModel');
         $postData = $this->input->post();
         if (empty($postData['first_name']) || empty($postData['last_name']) || empty($postData['email']) || empty($postData['password'])) {
