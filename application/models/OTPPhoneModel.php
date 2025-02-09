@@ -20,7 +20,7 @@ class OTPPhoneModel extends CI_Model
     // Get a single user by ID from the 'users' table
     public function get_by_phone_and_otp($phone, $otp)
     {
-        $query = $this->db->get_where('otp_phone', array('phone' => $phone, 'otp' => $otp), '1');
+        $query = $this->db->get_where('otp_phone', array('phone' => $phone, 'otp' => $otp, 'verified_at' => null), '1');
         return $query->row_array();
     }
 
