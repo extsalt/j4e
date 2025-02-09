@@ -28,8 +28,7 @@ class OTPPhoneModel extends CI_Model
     // Get a single user by ID from the 'users' table
     public function mark_as_verified($phone, $otp)
     {
-        $query = $this->db->update('otp_phone', ['verified_at' => date('Y-m-d H:is:')], array('phone' => $phone, 'otp' => $otp), '1');
-        return $query->row_array();
+        return $this->db->update('otp_phone', ['verified_at' => date('Y-m-d H:is:')], array('phone' => $phone, 'otp' => $otp), '1');
     }
 
     public function delete_by_phone_and_otp($phone, $otp)
