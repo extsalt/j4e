@@ -17,9 +17,18 @@ class OTPPhoneModel extends CI_Model
         return $query->row_array();
     }
 
-    public function delete($phone)
+    // Get a single user by ID from the 'users' table
+    public function get_by_phone_and_otp($phone, $otp)
+    {
+        $query = $this->db->get_where('otp_phone', array('phone' => $phone, 'otp' => $otp))->limit(1);
+        return $query->row_array();
+    }
+
+
+    public function delete_by_phone_and_otp($phone, $otp)
     {
         $this->db->where('phone', $phone);
+        $this->db->where('otp', $otp);
         $this->db->delete('otp_phone');
     }
 

@@ -25,6 +25,7 @@ $route['api/home'] = 'Api/HomeController/index';
 $route['api/login'] = 'Api/LoginController/login';
 $route['api/register'] = 'Api/RegisterController/register';
 $route['api/send_otp'] = 'Api/RegisterController/sendOTP';
+$route['api/verify_otp'] = 'Api/RegisterController/verifyOTP';
 $route['api/search'] = 'Api/UserController/index';
 $route['api/members'] = 'Api/UserController/getMemberById';
 $route['api/services'] = 'Api/ServiceController/index';
