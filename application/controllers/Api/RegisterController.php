@@ -52,7 +52,7 @@ class RegisterController extends CI_Controller
             $tokenInsertData['user_id'] = $userInsertID;
             $this->load->model('ApiTokenModel');
             $tokenInsertID = $this->ApiTokenModel->insertToken($tokenInsertData);
-            echo json_encode(array('status' => 'success', 'message' => 'User created successfully', 'data' => $data));
+            echo json_encode($data);
         } else {
             http_response_code(400);
             echo json_encode(array('status' => 'error', 'message' => 'Failed to create user'));
