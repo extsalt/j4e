@@ -18,15 +18,6 @@ class RegisterController extends CI_Controller
 
     public function register()
     {
-        $mobile = '9517677829';
-        $otp = random_int(1000, 9999);
-        $url = "https://softsms.in/app/smsapi/index.php?key=671a271f67634&type=text&contacts=$mobile&senderid=JFENTP&peid=1201161225010387296&templateid=1207166624969359273&msg=One%20Time%20Password%20$otp%20to%20Login%20for%20J4E%20App.%20If%20you%20didn%27t%20initiate,%20report%20as%20FRAUD%20on%209850325204%20J4E%20Team";
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, $url);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        $response = curl_exec($ch);
-        file_put_contents(__FILE__ . '.log', json_encode(compact('url', 'response')));
-        curl_close($ch);
         $this->load->model('UserModel');
         $postData = $this->input->post();
         if (empty($postData['firstName']) || empty($postData['lastName']) || empty($postData['email']) || empty($postData['password']) || empty($postData['phone'])) {
@@ -45,20 +36,24 @@ class RegisterController extends CI_Controller
         $insertData['password'] = password_hash($postData['password'], PASSWORD_DEFAULT);
         $insertData['first_name'] = strip_tags(trim($postData['firstName']));
         $insertData['last_name'] = strip_tags(trim($postData['lastName']));
+        $insertData['phone'] = strip_tags(trim($postData['phone']));
         $insertData['email_address'] = filter_var(strip_tags(trim($postData['email'])), FILTER_SANITIZE_EMAIL);
         $userInsertID = $this->UserModel->insert_user($insertData);
         if ($userInsertID) {
             http_response_code(200);
             $token = bin2hex(random_bytes(16));
-            $firstName = $insertData['first_name'];
-            $lastName = $insertData['last_name'];
+            $data['firstName'] = $insertData['first_name'];
+            $data['lastName'] = $insertData['last_name'];
+            $data['phone'] = $insertData['phone'];
+            $data['email'] = $insertData['email'];
+            $data['token'] = $token;
             $tokenInsertData['token'] = $token;
             $tokenInsertData['user_id'] = $userInsertID;
             $this->load->model('ApiTokenModel');
             $tokenInsertID = $this->ApiTokenModel->insertToken($tokenInsertData);
-            echo json_encode(array('status' => 'success', 'message' => 'User created successfully', 'token' => $token, 'firstName' => $firstName, 'lastName' => $lastName));
+            echo json_encode(array('status' => 'success', 'message' => 'User created successfully', 'data' => $data));
         } else {
-            http_response_code(500);
+            http_response_code(400);
             echo json_encode(array('status' => 'error', 'message' => 'Failed to create user'));
         }
     }
