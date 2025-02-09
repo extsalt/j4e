@@ -48,6 +48,7 @@ class RegisterController extends CI_Controller
             $data['email'] = $insertData['email_address'];
             $data['token'] = $token;
             $data['avatar'] = 'https%3A%2F%2Fj4e.s3.ap-south-1.amazonaws.com%2Fpublic%2Fdefault.png';
+            $data['company'] = '';
             $tokenInsertData['token'] = $token;
             $tokenInsertData['user_id'] = $userInsertID;
             $this->load->model('ApiTokenModel');
