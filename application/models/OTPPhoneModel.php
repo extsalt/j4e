@@ -27,9 +27,7 @@ class OTPPhoneModel extends CI_Model
 
     public function delete_by_phone_and_otp($phone, $otp)
     {
-        $this->db->where('phone', $phone);
-        $this->db->where('otp', $otp);
-        $this->db->delete('otp_phone');
+        $this->db->delete('otp_phone', ['phone' => $phone, 'otp' => $otp]);
     }
 
     // Insert a new user into the 'users' table
