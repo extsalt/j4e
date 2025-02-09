@@ -39,7 +39,7 @@ class OTPPhoneModel extends CI_Model
     
     public function delete_by_phone($phone)
     {
-        $this->db->delete('otp_phone', ['phone' => $phone]);
+        $this->db->delete('otp_phone', ['phone' => $phone, 'verified_at' => null]);
     }
 
     // Insert a new user into the 'users' table
