@@ -13,14 +13,14 @@ class OTPPhoneModel extends CI_Model
     // Get a single user by ID from the 'users' table
     public function get_otp_by_phone($phone)
     {
-        $query = $this->db->get_where('otp_phone', array('phone' => $phone))->limit(1);
+        $query = $this->db->get_where('otp_phone', array('phone' => $phone), '1');
         return $query->row_array();
     }
 
     // Get a single user by ID from the 'users' table
     public function get_by_phone_and_otp($phone, $otp)
     {
-        $query = $this->db->get_where('otp_phone', array('phone' => $phone, 'otp' => $otp))->limit(1);
+        $query = $this->db->get_where('otp_phone', array('phone' => $phone, 'otp' => $otp), '1');
         return $query->row_array();
     }
 
