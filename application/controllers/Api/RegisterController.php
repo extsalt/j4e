@@ -101,7 +101,7 @@ class RegisterController extends CI_Controller
             return;
         }
         if (is_array($otpRow) && count ($otpRow) > 0) {
-            $this->OTPPhoneModel->delete_by_phone_and_otp($mobile, $otp);
+            $this->OTPPhoneModel->mark_as_verified($mobile, $otp);
             echo json_encode(array('status' => 'success', 'message' => 'OTP verified successfully'));
             return;
         }
