@@ -75,6 +75,6 @@ class RegisterController extends CI_Controller
         file_put_contents(__FILE__ . '.log', json_encode(compact('url', 'response')));
         curl_close($ch);
         $this->OTPPhoneModel->insert(['otp' => $otp, 'phone' => $postData['phone']]);
-        echo json_encode(array('status' => 'success', 'message' => 'OTP sebd successfully'));
+        echo json_encode(array('status' => 'success', 'message' => 'OTP sent successfully'));
     }
 }
