@@ -95,8 +95,13 @@ class RegisterController extends CI_Controller
             echo json_encode(array('status' => 'error', 'message' => 'Invalid phone number or otp'));
             return;
         }
-        $this->OTPPhoneModel->get_by_phone_and_otp($mobile, $otp);
+        $otp = $this->OTPPhoneModel->get_by_phone_and_otp($mobile, $otp);
+        if (is_array($otp) && count ($otp) > 0) {
+            $this->OTPPhoneModel->delete_by_phone_and_otp($mobile, $otp);
+            echo json_encode(array('status' => 'success', 'message' => 'OTP verified successfully'));
+            return;
+        }
         $this->OTPPhoneModel->delete_by_phone_and_otp($mobile, $otp);
-        echo json_encode(array('status' => 'success', 'message' => 'OTP verified successfully'));
+        echo json_encode(array('status' => 'error', 'message' => 'Failed to verify OTP.'));
     }
 }
