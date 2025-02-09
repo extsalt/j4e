@@ -1,6 +1,6 @@
 <?php
 
-class UserModel extends CI_Model
+class OTPPhoneModel extends CI_Model
 {
     public function __construct()
     {
