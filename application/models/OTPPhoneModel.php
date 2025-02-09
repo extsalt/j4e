@@ -30,6 +30,12 @@ class OTPPhoneModel extends CI_Model
         $this->db->delete('otp_phone', ['phone' => $phone, 'otp' => $otp]);
     }
 
+    
+    public function delete_by_phone($phone)
+    {
+        $this->db->delete('otp_phone', ['phone' => $phone]);
+    }
+
     // Insert a new user into the 'users' table
     public function insert($data)
     {
