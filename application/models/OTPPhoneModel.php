@@ -17,6 +17,12 @@ class OTPPhoneModel extends CI_Model
         return $query->row_array();
     }
 
+    public function delete($phone)
+    {
+        $this->db->where('phone', $phone);
+        $this->db->delete('otp_phone');
+    }
+
     // Insert a new user into the 'users' table
     public function insert($data)
     {
