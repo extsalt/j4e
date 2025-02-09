@@ -45,7 +45,7 @@ class RegisterController extends CI_Controller
             $data['firstName'] = $insertData['first_name'];
             $data['lastName'] = $insertData['last_name'];
             $data['phone'] = $insertData['phone'];
-            $data['email'] = $insertData['email'];
+            $data['email'] = $insertData['email_address'];
             $data['token'] = $token;
             $tokenInsertData['token'] = $token;
             $tokenInsertData['user_id'] = $userInsertID;
