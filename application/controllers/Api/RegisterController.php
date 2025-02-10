@@ -20,9 +20,17 @@ class RegisterController extends CI_Controller
     {
         $this->load->model('UserModel');
         $postData = $this->input->post();
-        if (empty($postData['firstName']) || empty($postData['lastName']) || empty($postData['email']) || empty($postData['password']) || empty($postData['phone'])) {
+        if (
+            empty($postData['firstName']) ||
+            empty($postData['lastName']) ||
+            empty($postData['email']) ||
+            empty($postData['password']) ||
+            empty($postData['phone']) ||
+            empty($postData['company']) || 
+            empty($postData['designation'])
+        ) {
             http_response_code(400);
-            echo json_encode(array('status' => 'error', 'message' => 'First name, last name, email and password are required'));
+            echo json_encode(array('status' => 'error', 'message' => 'First name, last name, email, phone, company, designation and password are required'));
             return;
         }
         //sanitize and validate email
@@ -37,6 +45,8 @@ class RegisterController extends CI_Controller
         $insertData['first_name'] = strip_tags(trim($postData['firstName']));
         $insertData['last_name'] = strip_tags(trim($postData['lastName']));
         $insertData['phone'] = strip_tags(trim($postData['phone']));
+        $insertData['company'] = strip_tags(trim($postData['company']));
+        $insertData['designation'] = strip_tags(trim($postData['designation']));
         $insertData['email_address'] = filter_var(strip_tags(trim($postData['email'])), FILTER_SANITIZE_EMAIL);
         $userInsertID = $this->UserModel->insert_user($insertData);
         if ($userInsertID) {
@@ -97,7 +107,7 @@ class RegisterController extends CI_Controller
             echo json_encode(array('status' => 'error', 'message' => 'Invalid phone number or otp'));
             return;
         }
-        if (is_array($otpRow) && count ($otpRow) > 0) {
+        if (is_array($otpRow) && count($otpRow) > 0) {
             $this->OTPPhoneModel->mark_as_verified($mobile, $otp);
             echo json_encode(array('status' => 'success', 'message' => 'OTP verified successfully'));
             return;
