@@ -35,7 +35,7 @@ class LoginController extends CI_Controller
             $tokenInsertData['user_id'] = $user->id;
             $this->load->model('ApiTokenModel');
             $tokenInsertID = $this->ApiTokenModel->insertToken($tokenInsertData);
-            if ($user->avatar) {
+            if (!$user->avatar) {
                 $user->avatar = "https%3A%2F%2Fj4e.s3.ap-south-1.amazonaws.com%2Fpublic%2Fdefault.png";
             }
             $data['firstName'] = $user->first_name ?? '';
