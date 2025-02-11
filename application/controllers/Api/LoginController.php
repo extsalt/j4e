@@ -38,14 +38,14 @@ class LoginController extends CI_Controller
             if ($user->avatar) {
                 $user->avatar = "https%3A%2F%2Fj4e.s3.ap-south-1.amazonaws.com%2Fpublic%2Fdefault.png";
             }
-            $data['firstName'] = $user->first_name;
-            $data['lastName'] = $user->last_name;
-            $data['avatar'] = $user->avatar;
-            $data['token'] = $token;
-            $data['phone'] = $user->phone;
-            $data['email'] = $user->email_address;
-            $data['company'] = $user->company;
-            $data['designation'] = $user->designation;
+            $data['firstName'] = $user->first_name ?? '';
+            $data['lastName'] = $user->last_name ?? '';
+            $data['avatar'] = $user->avatar ?? '';
+            $data['token'] = $token ?? '';
+            $data['phone'] = $user->phone ?? '';
+            $data['email'] = $user->email_address ?? '';
+            $data['company'] = $user->company ?? '';
+            $data['designation'] = $user->designation ?? '';
             echo json_encode($data);
             return;
         }
