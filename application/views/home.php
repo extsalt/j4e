@@ -59,7 +59,7 @@
                             <?php
                                 for($i=0;$i<count($str);$i++)
                                 {
-                                    $ui = $this->db->where('id',$str[$i])->get('user')->row();
+                                    $ui = $this->db->where('id', $str[$i])->get('user')->row();
                                     $link = '#';
                                     if ($this->session->userdata('isLogIn'))
                                     {
@@ -96,7 +96,7 @@
                                 <div class="plac-hom-box">
                                     <div class="plac-hom-box-im">
                                         <img src="<?= base_url('admin/upload/avatar/123'.$ui->avatar_1) ?>"
-                                             alt="" loading="lazy">
+                                             alt="<?= $ui->id ?>" loading="lazy">
                                         <h4><?= $ui->first_name." ".$ui->last_name ?></h4>
                                         <span class="plac-det-cate"><?= $this->db->where('pack_id',$ui->packages_id)->get('packages')->row()->pack_name; ?></span>
                                     </div>
