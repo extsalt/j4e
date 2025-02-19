@@ -154,7 +154,7 @@
                             <li>
                                 <div class="plac-hom-box">
                                     <div class="plac-hom-box-im">
-                                        <img src="<?= base_url('admin/'.$val->image) ?>" alt="" loading="lazy">
+                                        <img src="<?= $val->image ?>" alt="" loading="lazy">
                                         <h4><?= $val->title ?></h4>
                                         <span class="plac-det-cate"><?= date('d, M Y',strtotime($val->date)) ?></span>
                                     </div>
