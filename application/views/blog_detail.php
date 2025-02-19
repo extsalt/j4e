@@ -75,7 +75,7 @@
                 </div>-->
                             <div class="lhs">
                 <div class="img">
-                    <img src="<?= base_url('admin/'.$blog_info->image) ?>" alt="" loading="lazy">
+                    <img src="<?= $blog_info->image ?>" alt="" loading="lazy">
                 </div>
                 
             </div>
