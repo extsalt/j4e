@@ -95,7 +95,7 @@
                             <li>
                                 <div class="plac-hom-box">
                                     <div class="plac-hom-box-im">
-                                        <img src="<?= base_url('admin/upload/avatar/'.$ui->avatar_1) ?>"
+                                        <img src="<?=urldecode($ui->avatar) ?>"
                                              alt="<?= $ui->id ?>" loading="lazy">
                                         <h4><?= $ui->first_name." ".$ui->last_name ?></h4>
                                         <span class="plac-det-cate"><?= $this->db->where('pack_id',$ui->packages_id)->get('packages')->row()->pack_name; ?></span>
