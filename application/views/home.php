@@ -229,7 +229,7 @@
 
 <!-- START --> 
 <?php
-if(!empty($services))
+if(!empty($services) && 0)
 {
 ?>
 <section>
